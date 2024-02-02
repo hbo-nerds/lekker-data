@@ -1,0 +1,3 @@
+thumbnails_*
+.venv
+__pycache__
