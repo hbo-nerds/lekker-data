@@ -133,7 +133,7 @@ def _scrape_twitch_tracker_page(driver, url, tt_id):
     inner_text = first_child.get_attribute("innerText")
     hours = int(inner_text.split("h")[0] or "0")
     minutes = int(inner_text.split("h")[1].split("m")[0] or "0")
-    total_minutes = hours * 60 + minutes
+    total_seconds = (hours * 60 + minutes) * 60
     # -----------------------
 
     driver.implicitly_wait(5)
@@ -175,8 +175,8 @@ def _scrape_twitch_tracker_page(driver, url, tt_id):
         duration = card_durations[j]
         hours = int(duration.split("h")[0] or "0")
         minutes = int(duration.split("h")[1].split("m")[0] or "0")
-        total_minutes_game = hours * 60 + minutes
-        activities.append({"title": title, "duration": total_minutes_game})
+        total_seconds_game = (hours * 60 + minutes) * 60
+        activities.append({"title": title, "duration": total_seconds_game})
 
     # --- STREAM TITLES ---
     stream_title_element = driver.find_elements(By.ID, "stream-titles")
@@ -198,7 +198,7 @@ def _scrape_twitch_tracker_page(driver, url, tt_id):
         "time_end": time_end.strftime("%H:%M"),
         "titles": titles,
         "activities": activities,
-        "duration": total_minutes,
+        "duration": total_seconds,
     }
 
     return data
