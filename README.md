@@ -42,6 +42,8 @@ Voor de objecten waarbij `type == "video"`:
 Voor de objecten waarbij `type == "stream"`:
 
 * `"titles": string[]` - Een lijst van alle titels die de stream heeft gehad. Bijvoorbeeld: `["100 RONDJES in VR EFTELING ACHTBAAN"]`
+* `title_main: int?` - De index van de titel in de `titles` lijst die als hoofdtitel van de stream wordt gezien.
+* `title_custom: string?` - Een zelfbedachte titel voor als de stream geen goede titels heeft die de stream omschrijft.
 * `"activities": string[]` - Een lijst van alle activiteiten die zijn gedaan tijdens deze stream. Bijvoorbeeld: `["Drawing from Memory"]`
 * `"twitchtracker_id": string?` - De ID van de stream op TwitchTracker. Niet beschikbaar voor streams voor 21 november 2016.
 * `"twitch_id": string?` - De ID van de stream op Twitch.
