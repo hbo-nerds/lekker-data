@@ -35,21 +35,21 @@ def scrape_stream():
         else:
             print("Dat is geen optie. Probeer het opnieuw.")
 
+    options = Options()
+    options.add_argument("--headless")
+
     if use_profile:
         # Path to your Chrome profile
         profile_path = "C:/Users/danie/AppData/Local/Google/Chrome/User Data"
 
-        options = Options()
         options.add_argument(f"user-data-dir={profile_path}")
 
         # Ensure you replace 'Default' with the appropriate profile name if necessary
         options.add_argument("profile-directory=Default")
 
-        driver = webdriver.Chrome(
-            service=Service(ChromeDriverManager().install()), options=options
-        )
-    else:
-        driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
+    driver = webdriver.Chrome(
+        service=Service(ChromeDriverManager().install()), options=options
+    )
 
     tt_data = _scrape_twitch_tracker(data, driver)
 
@@ -83,6 +83,7 @@ def scrape_stream():
 
 
 def _scrape_twitch_tracker(data, driver):
+    print("- TwitchTracker -")
     existing_ids = []
 
     for item in data["content"]:
@@ -112,7 +113,10 @@ def _scrape_twitch_tracker(data, driver):
         print("Geen nieuwe streams op TwitchTracker gevonden")
         return tt_data
 
+    print(f"Ik heb {len(urls)} nieuwe streams gevonden op TwitchTracker")
+
     for url, tt_id in urls:
+        print(f"Scraping stream {tt_id}")
         tt_data.append(_scrape_twitch_tracker_page(driver, url, tt_id))
 
     return tt_data
@@ -205,6 +209,7 @@ def _scrape_twitch_tracker_page(driver, url, tt_id):
 
 
 def _scrape_twitch(data, driver, tt_data):
+    print("- Twitch -")
     driver.get("https://www.twitch.tv/lekkerspelen/videos?filter=highlights&sort=time")
 
     streams = WebDriverWait(driver, 10).until(
@@ -257,6 +262,7 @@ Pas het handmatig aan als dit niet klopt."""
 
 
 def _scrape_youtube(data, driver, tt_data):
+    print("- Youtube -")
     driver.get("https://www.youtube.com/@lekkerspelen/streams")
 
     page = WebDriverWait(driver, 10).until(
@@ -280,8 +286,6 @@ def _scrape_youtube(data, driver, tt_data):
 
     new_streams = []
     new_ids = []
-
-    print("existing ids count", len(existing_ids))
 
     for stream in streams:
         yt_id = stream.get_attribute("href").split("=")[1].split("&")[0]
