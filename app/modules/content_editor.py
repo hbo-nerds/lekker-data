@@ -7,7 +7,7 @@ from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.support import expected_conditions as EC
 import subprocess
 import json
-from bs4 import BeautifulSoup
+from bs4 import BeautifulSoup, NavigableString, Tag
 
 
 def edit_content():
@@ -43,16 +43,18 @@ def edit_content():
     soup = BeautifulSoup(driver.page_source, "html.parser")
     driver.quit()
 
-    description_element = soup.find("h3", text="Beschrijving").find_next_sibling("p")
+    description_element = _find_direct_next_sibling(soup.find("h3", text="Beschrijving"), "p")
     if description_element:
         description = description_element.text
 
-    tags_element = soup.find("h3", text="Tags").find_next_sibling("p")
-
+    tags_element = _find_direct_next_sibling(soup.find("h3", text="Tags"), "p")
     if tags_element:
         tags = tags_element.text.split(",")
-        for i, tag in enumerate(tags):
-            tags[i] = tag.strip()
+        tags = [tag.strip() for tag in tags]
+
+    if not description and not tags:
+        print("Geen content gevonden om aan te passen.")
+        return
 
     json_path = "data/data.json"
     with open(json_path, encoding="utf8") as json_file:
@@ -163,3 +165,18 @@ def edit_content():
 
     subprocess.run(["git", "push"], check=True)
     print("Aanpassingen gepushed.")
+
+def _find_direct_next_sibling(tag, name=None, **kwargs):
+    """
+    Finds the direct next sibling of a tag that matches the given criteria,
+    skipping over NavigableString instances like newlines and whitespace.
+    """
+    sibling = tag.next_sibling
+    while sibling and isinstance(sibling, (NavigableString, Tag)):
+        if isinstance(sibling, Tag):
+            if sibling.name == name or not name:
+                if all(sibling.get(k) == v for k, v in kwargs.items()):
+                    return sibling
+            return None
+        sibling = sibling.next_sibling
+    return None
