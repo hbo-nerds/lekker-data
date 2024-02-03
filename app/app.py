@@ -1,4 +1,5 @@
 from modules.stream_scraper import scrape_stream
+from modules.content_editor import edit_content
 
 
 def main():
@@ -7,7 +8,7 @@ def main():
         print("1. Nieuwste stream(s) toevoegen")
         print("2. Nieuwste video(s) toevoegen")
         print("3. 3rd-party video toevoegen")
-        print("4. Een video aanpassen")
+        print("4. Content aanpassen")
         print("5. Een thumbnail downloaden")
         print("6. Exit")
 
@@ -17,7 +18,8 @@ def main():
             scrape_stream()
         elif choice == "2":
             pass
-            # feature2()
+        elif choice == "4":
+            edit_content()
         elif choice == "6":
             print("lekkerDag lekkerLief")
             break
