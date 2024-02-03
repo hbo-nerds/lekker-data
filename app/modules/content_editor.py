@@ -7,7 +7,6 @@ from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.support import expected_conditions as EC
 import subprocess
 import json
-import requests
 from bs4 import BeautifulSoup
 
 
