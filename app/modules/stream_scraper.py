@@ -258,7 +258,7 @@ Pas het handmatig aan als dit niet klopt."""
     # Download all the thumbnails using requests
     for i, thumbnail in enumerate(thumbnails):
         response = requests.get(thumbnail)
-        process_images(response.content, tt_data[i]["twitchtracker_id"], "twitch")
+        process_images(response.content, tt_data[i]["twitchtracker_id"], "stream_twitch")
 
 
 def _scrape_youtube(data, driver, tt_data):
@@ -321,4 +321,4 @@ Pas het handmatig aan als dit niet klopt."""
     # Download all the thumbnails using requests
     for i, thumbnail in enumerate(thumbnails):
         response = requests.get(thumbnail)
-        process_images(response.content, new_ids[i], "youtube")
+        process_images(response.content, new_ids[i], "stream_youtube")

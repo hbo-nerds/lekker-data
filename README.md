@@ -15,10 +15,10 @@ Dit zijn de velden die je in de objecten van `content` vindt:
 ### Standaard velden
 
 * `"id": string` - De ID van de content. Dit is een hex string van 4 karakters.
-* `"type": string` - Het type van de content. Dit kan zijn: `"video"`, `"stream"`, `"podcast"`.
-* `"date": string` - De datum dat de content is geupload of gestreamd. In het formaat `YYYY-MM-DD`.
+* `"type": string` - Het type van de content. Dit kan zijn: `"video"`, `"stream"`, `"podcast"`
+* `"date": string` - De datum dat de content is geupload of gestreamd. In het formaat `YYYY-MM-DD`
 * `"duration": integer` - De lengte van de content duurt in seconden.
-* `"youtube_id": string?` - De ID van de YouTube video. Dit is de ID die je in de URL van de video vindt. Bijvoorbeeld: `"dQw4w9WgXcQ"`.
+* `"youtube_id": string?` - De ID van de YouTube video. Dit is de ID die je in de URL van de video vindt. Bijvoorbeeld: `"dQw4w9WgXcQ"`
 * `"description": string?` - De beschrijving van de content.
 * `"collection": integer?` - De ID van de collection waar de content bij hoort. Dit is een hex string van 4 karakters.
 
@@ -35,7 +35,7 @@ Voor de objecten waarbij `type == "video"` of `type == "podcast"`:
 
 Voor de objecten waarbij `type == "video"`:
 
-* `"activity": string` - De activiteit van de content. Bijvoorbeeld `"Drawing from Memory"`
+* `"activity": string|string[]` - De activiteit van de content. Bijvoorbeeld `"Drawing from Memory"` of `["The Lion King", "Drawing from Memory"]`
 
 #### Stream
 
