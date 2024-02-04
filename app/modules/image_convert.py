@@ -47,7 +47,7 @@ def process_images(image_data, id, name):
             processed_img = resize_and_crop_image(img, width, height)
 
             # Convert to WebP and save
-            new_folder = f"thumbnails_{name}_{width}px"
+            new_folder = f"thumbnails/{name}_{width}px"
             new_file_name = f"{id}.webp"
             os.makedirs(new_folder, exist_ok=True)
             processed_img.save(os.path.join(new_folder, new_file_name), "WEBP")
