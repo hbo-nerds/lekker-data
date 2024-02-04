@@ -1,5 +1,6 @@
 from modules.stream_scraper import scrape_stream
 from modules.video_scraper import scrape_video
+from modules.video_scraper_third_party import scrape_third_party_video
 from modules.content_editor import edit_content
 
 
@@ -19,6 +20,8 @@ def main():
             scrape_stream()
         elif choice == "2":
             scrape_video()
+        elif choice == "3":
+            scrape_third_party_video()
         elif choice == "4":
             edit_content()
         elif choice == "6":

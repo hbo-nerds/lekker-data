@@ -62,7 +62,7 @@ def scrape_video():
                         if "|" in activity:
                             activity = activity.split("|")
 
-                        video_data["activity"] = activity
+                        video_data["activity"] = [act.strip() for act in activity]
 
                     data["content"].append(video_data)
 
