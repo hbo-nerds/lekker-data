@@ -9,7 +9,7 @@ from modules.image_convert import process_images
 
 
 def scrape_video():
-    json_path = "data/data_test.json"
+    json_path = "data/data.json"
     with open(json_path, encoding="utf8") as json_file:
         data = json.load(json_file)
 
