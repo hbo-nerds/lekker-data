@@ -13216,14 +13216,11 @@
             "titles": [
                 "Timonloos streampie"
             ],
+            "custom_title": "Timon speelt P.T. (HORROR). In zijn eentje. In het donker.",
             "activities": [
                 {
-                    "title": "Silent Hills",
-                    "duration": 9840
-                },
-                {
-                    "title": "PUBG: BATTLEGROUNDS",
-                    "duration": 8100
+                    "title": "P.T.",
+                    "duration": 17940
                 }
             ],
             "twitchtracker_id": "25677534928",
