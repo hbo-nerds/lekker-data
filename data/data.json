@@ -45587,6 +45587,35 @@
             ],
             "time_start": "20:47:00",
             "time_end": "23:25:00"
+        },
+        {
+            "twitchtracker_id": "41835203496",
+            "date": "2024-02-05",
+            "time_start": "20:33",
+            "time_end": "22:35",
+            "titles": [
+                "ZE ZIJN TERUG EN ZIELIGER DAN OOIT"
+            ],
+            "activities": [
+                {
+                    "title": "Special Events",
+                    "duration": 2160
+                },
+                {
+                    "title": "Palworld",
+                    "duration": 5100
+                }
+            ],
+            "duration": 7260,
+            "twitch_id": "2054306264",
+            "youtube_id": "GydIyXyyl68",
+            "id": "074e",
+            "type": "stream",
+            "tags": [
+                "main",
+                "character creator"
+            ],
+            "description": "Ze spelen Palworld, waarbij ze in de character creation een heel breed character maken. Het duurt even voordat ze een naam kunnen verzinnen. In Palworld gaan ze steeds neer waardoor ze steeds hetzelfde stuk opnieuw moeten lopen. Ze proberen een mens te vangen."
         }
     ]
 }
