@@ -14,6 +14,7 @@ from modules.image_convert import process_images
 
 
 def scrape_stream():
+    print("Stream scrapen")
     json_path = "data/data.json"
     with open(json_path, encoding="utf8") as json_file:
         data = json.load(json_file)
@@ -36,11 +37,11 @@ def scrape_stream():
             print("Dat is geen optie. Probeer het opnieuw.")
 
     options = Options()
-    options.add_argument("--headless")
+    #options.add_argument("--headless")
 
     if use_profile:
         # Path to your Chrome profile
-        profile_path = "C:/Users/danie/AppData/Local/Google/Chrome/User Data"
+        profile_path = "C:/Users/Sjors/AppData/Local/Google/Chrome/User Data"
 
         options.add_argument(f"user-data-dir={profile_path}")
 
