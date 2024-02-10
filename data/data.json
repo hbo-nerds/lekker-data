@@ -248,6 +248,10 @@
             "id": 65,
             "title": "H1Z1"
         }
+         {
+            "id": 66,
+            "title": "Pokemon Let's Go (shiny's)"
+        }
     ],
     "content": [
         {
@@ -13226,7 +13230,8 @@
             "twitchtracker_id": "25677534928",
             "twitch_id": "165227654",
             "tags": [
-                "main"
+                "main",
+                "silent hill"
             ],
             "time_start": "21:55:00",
             "time_end": "02:55:00"
@@ -23583,6 +23588,7 @@
             "type": "stream",
             "date": "2018-11-16",
             "duration": 10620,
+            "collection": 66,
             "youtube_id": "T1PhSMVHkD8",
             "titles": [
                 "Pokémon Let's Go stream!"
@@ -23606,6 +23612,7 @@
             "type": "stream",
             "date": "2018-11-17",
             "duration": 7440,
+            "collection": 66,
             "youtube_id": "EFgU3eLhN3Y",
             "titles": [
                 "Pokémon Let's Go stream!"
@@ -23674,6 +23681,7 @@
             "type": "stream",
             "date": "2018-11-23",
             "duration": 5100,
+            "collection": 66,
             "youtube_id": "PK1SH5F-xSk",
             "titles": [
                 "Pokémon Let's Go: VOOR DIE SHINY'S!"
@@ -23696,6 +23704,7 @@
             "type": "stream",
             "date": "2018-11-26",
             "duration": 15000,
+            "collection": 66,
             "youtube_id": "oyfWF16CyWM",
             "titles": [
                 "Pokémon Let's Go: VOOR DIE SHINY'S!"
@@ -23804,6 +23813,7 @@
             "type": "stream",
             "date": "2018-12-05",
             "duration": 15180,
+            "collection": 66,
             "titles": [
                 "Pokémon Let's Go: VOOR MEER SHINY'S!"
             ],
