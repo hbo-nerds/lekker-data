@@ -43487,29 +43487,31 @@
             "time_start": "20:31:00",
             "time_end": "22:35:00"
         },
-        {
-            "id": "dd9e",
-            "type": "stream",
-            "date": "2023-04-26",
-            "duration": 9060,
-            "youtube_id": "cNhDcyQN_0o",
-            "titles": [
-                "Dora the Explorer (maar dan geflipt)"
-            ],
-            "activities": [
-                {
-                    "title": "Amanda the Adventurer",
-                    "duration": 9060
-                }
-            ],
-            "twitchtracker_id": "40685497672",
-            "twitch_id": "1804390617",
-            "tags": [
-                "main"
-            ],
-            "time_start": "20:33:00",
-            "time_end": "23:05:00"
-        },
+      {
+        "id": "dd9e",
+        "type": "stream",
+        "date": "2023-04-26",
+        "duration": 9060,
+        "youtube_id": "cNhDcyQN_0o",
+        "titles": [
+          "Dora the Explorer (maar dan geflipt)"
+        ],
+        "activities": [
+          {
+            "title": "Amanda the Adventurer",
+            "duration": 9060
+          }
+        ],
+        "twitchtracker_id": "40685497672",
+        "twitch_id": "1804390617",
+        "tags": [
+          "main",
+          "escaperoom"
+        ],
+        "time_start": "20:33:00",
+        "time_end": "23:05:00",
+        "description": "Peter en Timon spelen Amanda the Adventurer, een soort horror escape room gebaseerd op een videotape van een geflipte versie van Dora. Lekker griezelen."
+      },
         {
             "id": "001b",
             "type": "stream",
@@ -45654,7 +45656,7 @@
         },
         {
             "id": "a6ef",
-            "type": "podcast",
+            "type": "video",
             "date": "2024-02-08",
             "title": "PETER vs TIMON 2023 🏆 (Verliezer wordt FORTNITE YOUTUBER)",
             "duration": 3369,
