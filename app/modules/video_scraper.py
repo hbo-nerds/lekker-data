@@ -49,7 +49,7 @@ def scrape_video():
 
                     video_data = {
                         "id": uuid.uuid4().hex[:4],
-                        "type": "video" if channel == "lekkerspelen" else "podcast",
+                        "type": "video" if channel == "@lekkerspelen" else "podcast",
                         "date": datetime.strptime(video_info.get('upload_date'), "%Y%m%d").strftime('%Y-%m-%d'),
                         "title": video.get('title'),
                         "duration": video_info.get('duration'),

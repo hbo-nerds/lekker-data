@@ -1,3 +1,4 @@
+import os
 import uuid
 import requests
 import json
@@ -41,7 +42,7 @@ def scrape_stream():
 
     if use_profile:
         # Path to your Chrome profile
-        profile_path = "C:/Users/Sjors/AppData/Local/Google/Chrome/User Data"
+        profile_path = os.environ['APPDATA'] + "\\Google\\Chrome\\User Data"
 
         options.add_argument(f"user-data-dir={profile_path}")
 
