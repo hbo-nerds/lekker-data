@@ -1,72 +1,32 @@
 import os
+import time
 import uuid
 import requests
 import json
-from datetime import datetime
-from selenium import webdriver
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.chrome.options import Options
-from selenium.webdriver.chrome.service import Service
-from webdriver_manager.chrome import ChromeDriverManager
-from selenium.webdriver.support import expected_conditions as EC
+import yt_dlp
+from datetime import datetime, timedelta
 
 from modules.image_convert import process_images
 
+TWITCH_API_ACCESS_TOKEN = os.environ.get('TWITCH_API_ACCESS_TOKEN', '')
+TWITCH_API_CLIENT_ID = os.environ.get('TWITCH_API_CLIENT_ID', '')
 
 def scrape_stream():
-    print("Stream scrapen")
+    print("- Stream -")
     json_path = "data/data.json"
     with open(json_path, encoding="utf8") as json_file:
         data = json.load(json_file)
 
-    use_profile = False
+    twitch_data = _get_streams_from_twitch(data)
 
-    while True:
-        print(
-            "\nHet kan zijn dat TwitchTracker je niet doorlaat zonder Chrome profiel (Verify that you are human)."
-        )
-
-        answer = input("Wil je je eigen Chrome profiel gebruiken? (y/n)")
-
-        if answer.lower() == "y":
-            use_profile = True
-            break
-        elif answer.lower() == "n":
-            break
-        else:
-            print("Dat is geen optie. Probeer het opnieuw.")
-
-    options = Options()
-    #options.add_argument("--headless")
-
-    if use_profile:
-        # Path to your Chrome profile
-        profile_path = os.environ['APPDATA'] + "\\Google\\Chrome\\User Data"
-
-        options.add_argument(f"user-data-dir={profile_path}")
-
-        # Ensure you replace 'Default' with the appropriate profile name if necessary
-        options.add_argument("profile-directory=Default")
-
-    driver = webdriver.Chrome(
-        service=Service(ChromeDriverManager().install()), options=options
-    )
-
-    tt_data = _scrape_twitch_tracker(data, driver)
-
-    if len(tt_data) == 0:
+    if len(twitch_data) == 0:
         print("Geen nieuwe streams gevonden")
-        driver.quit()
         return
+    
+    _get_streams_from_youtube(data, twitch_data)
 
-    _scrape_twitch(data, driver, tt_data)
 
-    _scrape_youtube(data, driver, tt_data)
-
-    driver.quit()
-
-    for content_data in tt_data:
+    for content_data in twitch_data:
         while True:
             content_id = uuid.uuid4().hex[:4]
             if content_id not in [item["id"] for item in data["content"]]:
@@ -83,123 +43,100 @@ def scrape_stream():
 
     # -----------------------------
 
-
-def _scrape_twitch_tracker(data, driver):
-    print("- TwitchTracker -")
+def _get_streams_from_twitch(data):
+    print("- Twitch -")
     existing_ids = []
 
     for item in data["content"]:
-        if "twitchtracker_id" in item:
-            existing_ids.append(item["twitchtracker_id"])
+        if "twitch_id" in item:
+            existing_ids.append(item["twitch_id"])
 
-    # Get TwitchTracker data
-    driver.get("https://twitchtracker.com/lekkerspelen/streams")
-    streams = WebDriverWait(driver, 10).until(
-        EC.presence_of_element_located((By.ID, "streams"))
-    )
+    authorization_headers = {
+        "Authorization": f"Bearer {TWITCH_API_ACCESS_TOKEN}",
+        "Client-Id": TWITCH_API_CLIENT_ID
+    }
 
-    tt_data = []
+    res = requests.get("https://api.twitch.tv/helix/videos?user_id=52385053&type=archive", headers=authorization_headers)
+    json_data = res.json()
 
-    # Find multiple by selector
-    tt_a_elements = streams.find_elements(By.CSS_SELECTOR, "tbody > tr > td > a")
+    t_data = []
+    t_ids = []
 
-    urls = []
+    for item in json_data['data']:
+        if item['id'] not in existing_ids:
+            t_ids.append((item['id'], item))
 
-    for a_element in tt_a_elements:
-        url = a_element.get_attribute("href")
-        tt_id = url.split("/")[-1]
-        if tt_id not in existing_ids:
-            urls.append((url, tt_id))
+    if not t_ids:
+        print("Geen nieuwe streams op Twitch gevonden")
+        return t_data
+    
+    print(f"Ik heb {len(t_ids)} nieuwe streams gevonden op Twitch")
 
-    if not urls:
-        print("Geen nieuwe streams op TwitchTracker gevonden")
-        return tt_data
+    for id, item in t_ids:
+        title = item["title"]
+        print(f"\nStream {id} met titel: {title}")
+        t_data.append(_build_stream_item(item))
 
-    print(f"Ik heb {len(urls)} nieuwe streams gevonden op TwitchTracker")
+    return t_data
 
-    for url, tt_id in urls:
-        print(f"Scraping stream {tt_id}")
-        tt_data.append(_scrape_twitch_tracker_page(driver, url, tt_id))
+    # -----------------------------
 
-    return tt_data
-
-
-def _scrape_twitch_tracker_page(driver, url, tt_id):
-    driver.get(url)
-
-    stream_duration_text = WebDriverWait(driver, 10).until(
-        EC.presence_of_element_located(
-            (By.XPATH, "//*[contains(text(), 'Stream Duration')]")
-        )
-    )
-
+def _build_stream_item(item):
     # --- STREAM DURATION ---
-    parent_element = stream_duration_text.find_element(By.XPATH, "..")
-    first_child = parent_element.find_element(By.XPATH, "*")
-    inner_text = first_child.get_attribute("innerText")
-    hours = int(inner_text.split("h")[0] or "0")
-    minutes = int(inner_text.split("h")[1].split("m")[0] or "0")
+    duration_string = item["duration"]
+    hours = int(duration_string.split("h")[0] or "0")
+    minutes = int(duration_string.split("h")[1].split("m")[0] or "0")
     total_seconds = (hours * 60 + minutes) * 60
-    # -----------------------
-
-    driver.implicitly_wait(5)
 
     # --- STREAM DATE ---
-    date = driver.find_element(by=By.ID, value="stream-date").get_attribute("innerText")
-
-    # Convert DECEMBER 12, 2016 to proper date time
-    date = datetime.strptime(date, "%B %d, %Y")
-    # -------------------
+    date_string = item["created_at"].split("T")[0]
 
     # --- STREAM START/END ---
-    timestamp_elements = driver.find_elements(By.CLASS_NAME, "stream-timestamp-dt")
-    time_start = timestamp_elements[0].get_attribute("innerText")
-    time_end = timestamp_elements[1].get_attribute("innerText")
-
-    # Convert Mon, Aug 7, 20:32 to proper date time
-    time_start = datetime.strptime(time_start, "%a, %b %d, %H:%M")
-    time_end = datetime.strptime(time_end, "%a, %b %d, %H:%M")
-
-    # Add year from date to time_start and time_end
-    time_start = time_start.replace(year=date.year)
-    time_end = time_end.replace(year=date.year)
-    # -----------------------
-
-    # --- GAMES PLAYED ---
-    card_title_elements = driver.find_elements(By.CLASS_NAME, "card-title")
-    card_titles = [
-        element.get_attribute("innerText") for element in card_title_elements
-    ]
-
-    card_duration_elements = driver.find_elements(By.CLASS_NAME, "stats-duration")
-    card_durations = [
-        element.get_attribute("innerText") for element in card_duration_elements
-    ]
-
-    activities = []
-    for j, title in enumerate(card_titles):
-        duration = card_durations[j]
-        hours = int(duration.split("h")[0] or "0")
-        minutes = int(duration.split("h")[1].split("m")[0] or "0")
-        total_seconds_game = (hours * 60 + minutes) * 60
-        activities.append({"title": title, "duration": total_seconds_game})
+    # make sure time zone is set to NL
+    os.environ['TZ'] = 'Europe/Amsterdam' # set new timezone
+    time.tzset()
+    
+    # set time start and time end based on created_at and duration
+    time_start = datetime.fromisoformat(item["created_at"].replace("Z", "") + "+00:00")
+    time_end = time_start + timedelta(0, total_seconds)
 
     # --- STREAM TITLES ---
-    stream_title_element = driver.find_elements(By.ID, "stream-titles")
+    titles = [item['title']]
+    while True:
+        print("Voer een extra titel in. Wil je verder gaan? Druk dan op enter.")
+        title = input("Titel: ") 
+        
+        if not title:
+            break
+        titles.append(title)
 
-    if len(stream_title_element) > 0:
-        # Find all child elements with class 'line' inside 'stream-title'
-        line_elements = stream_title_element[0].find_elements(By.CLASS_NAME, "line")
+    # --- GAMES PLAYED ---
+    activities = []
+    while True:
+        print("Voer een activiteit in. Wil je verder gaan? Druk dan op enter.")
+        title = input("Titel: ") 
+        if not title:
+            break
 
-        # Extract the 'innerText' of each 'line' element
-        titles = [element.get_attribute("innerText")[6::] for element in line_elements]
-    else:
-        titles = ["Lekker '" + card_titles[0] + "' spelen"]
-    # ---------------------
+        while True:
+            try:
+                duration = int(input("Duur (in seconden): "))
+                break
+            except:
+                print('Ongeledige duur, probeer het nog eens.')
+                continue
+        
+        activities.append({"title": title, "duration": duration})
+
+    # --- THUMBNAILS ---
+    twitch_id = item["id"]
+    thumbnail = item['thumbnail_url'].replace("%{width}x%{height}",  "640x360")
+    response = requests.get(thumbnail)
+    process_images(response.content, twitch_id, "stream_twitch")
 
     data = {
-        "twitchtracker_id": tt_id,
-        "date": date.strftime("%Y-%m-%d"),
+        "twitch_id": twitch_id,
+        "date": date_string,
         "time_start": time_start.strftime("%H:%M"),
         "time_end": time_end.strftime("%H:%M"),
         "titles": titles,
@@ -207,120 +144,51 @@ def _scrape_twitch_tracker_page(driver, url, tt_id):
         "duration": total_seconds,
     }
 
+    print(data)
+
     return data
 
+    # -----------------------------
 
-def _scrape_twitch(data, driver, tt_data):
-    print("- Twitch -")
-    driver.get("https://www.twitch.tv/lekkerspelen/videos?filter=highlights&sort=time")
 
-    streams = WebDriverWait(driver, 10).until(
-        EC.presence_of_all_elements_located(
-            (By.XPATH, "//a[@data-a-target='preview-card-image-link']")
-        )
-    )
+def _get_streams_from_youtube(data, twitch_data):
+    print("\n\n- Youtube -")
 
-    existing_ids = []
+    streams = []
 
-    for item in data["content"]:
-        if "twitch_id" in item and item["twitch_id"]:
-            existing_ids.append(item["twitch_id"])
+    ydl_opts = {
+        'skip_download': True,
+        'extract_flat': True,
+        'youtube_include_dash_manifest': False,
+    }
+   
+    with yt_dlp.YoutubeDL(ydl_opts) as ydl:
+        # get streams from playlist "Lekker spelen live streams (VOD)"
+        info = ydl.extract_info("https://www.youtube.com/playlist?list=PL_y_qOVNZ5i8UUv9Tg_pMd9RSqO9pNzdi", download=False, process=False)
+        
+        if 'entries' in info:
+            for stream in info['entries']:
+                streams.append(stream)
 
-    new_streams = []
-    new_ids = []
+    new_streams = [] 
 
-    for stream in streams:
-        twitch_id = stream.get_attribute("href").split("/")[-1].split("?")[0]
-        if twitch_id not in existing_ids:
-            new_ids.append(twitch_id)
-            new_streams.append(stream)
+    for i, t in enumerate(twitch_data):
+        new_streams.append(streams[i])
+        yt_id = streams[i]["id"]
+        yt_title = streams[i]["title"]
+        twitch_id = t["twitch_id"]
+        twitch_title = t["titles"][0]
+        print("\nVolgende Youtube - Twitch koppeling gemaakt:")
+        print(f"Youtube stream: ({yt_id}) {yt_title}")
+        print(f"Twitch stream: ({twitch_id}) {twitch_title}")
+        t["youtube_id"] = yt_id[i]
 
-    if not new_streams:
-        print("Geen nieuwe highlights op Twitch gevonden")
-        return
+    print("\nControleer bovenstaande koppelingen goed!")
 
-    print(f"Ik heb {len(new_streams)} nieuwe highlights gevonden")
-
-    print(
-        """Ik ga ervan uit dat de nieuwste streams gelinkt zijn aan de nieuwste highlights.
-Pas het handmatig aan als dit niet klopt."""
-    )
-
-    for i, tt in enumerate(tt_data):
-        tt["twitch_id"] = new_ids[i]
-
-    # Get Twitch data
-    thumbnails = []
-
+    # Get Thumbnails
     for stream in new_streams:
-        # Find xpath div div div div div img
-        thumbnail = stream.find_element(By.XPATH, ".//div/div/div/div/div/img")
-        thumbnails.append(thumbnail.get_attribute("src").replace("320x180", "640x360"))
+        url = stream["thumbnails"][-1]['url'].replace("hqdefault", "maxresdefault")
+        response = requests.get(url)
+        process_images(response.content, stream["id"], "stream_youtube")
 
-    # Download all the thumbnails using requests
-    for i, thumbnail in enumerate(thumbnails):
-        response = requests.get(thumbnail)
-        process_images(response.content, tt_data[i]["twitchtracker_id"], "stream_twitch")
-
-
-def _scrape_youtube(data, driver, tt_data):
-    print("- Youtube -")
-    driver.get("https://www.youtube.com/@lekkerspelen/streams")
-
-    page = WebDriverWait(driver, 10).until(
-        EC.presence_of_element_located(
-            (
-                By.CSS_SELECTOR,
-                "ytd-two-column-browse-results-renderer[page-subtype='channels']",
-            )
-        )
-    )
-
-    streams = page.find_elements(
-        By.CSS_SELECTOR, "a.yt-simple-endpoint.style-scope.ytd-thumbnail"
-    )
-
-    existing_ids = []
-
-    for item in data["content"]:
-        if "youtube_id" in item and item["youtube_id"]:
-            existing_ids.append(item["youtube_id"])
-
-    new_streams = []
-    new_ids = []
-
-    for stream in streams:
-        yt_id = stream.get_attribute("href").split("=")[1].split("&")[0]
-        if yt_id not in existing_ids:
-            print(yt_id)
-            new_ids.append(yt_id)
-            new_streams.append(stream)
-
-    if not new_streams:
-        print("Geen nieuwe streams op Youtube gevonden")
-        return
-
-    print(f"Ik heb {len(new_streams)} nieuwe Youtube stream(s) gevonden")
-
-    print(
-        """Ik ga ervan uit dat de nieuwste streams op TwitchTracker gelinkt zijn aan de nieuwste streams op Youtube.
-Pas het handmatig aan als dit niet klopt."""
-    )
-
-    for i, tt in enumerate(tt_data):
-        tt["youtube_id"] = new_ids[i]
-
-    # Get Twitch data
-    thumbnails = []
-
-    for stream in new_streams:
-        thumbnail = stream.find_element(By.CSS_SELECTOR, "img")
-        if thumbnail:
-            src = thumbnail.get_attribute("src")
-            if src:
-                thumbnails.append(src.replace("hqdefault", "maxresdefault"))
-
-    # Download all the thumbnails using requests
-    for i, thumbnail in enumerate(thumbnails):
-        response = requests.get(thumbnail)
-        process_images(response.content, new_ids[i], "stream_youtube")
+    # -----------------------------
