@@ -47,9 +47,14 @@ def scrape_video():
 
                     video_info = ydl.extract_info(video_id, download=False)
 
+                    while True:
+                        content_id = uuid.uuid4().hex[:4]
+                        if content_id not in [item["id"] for item in data["content"]]:
+                            break
+
                     video_data = {
-                        "id": uuid.uuid4().hex[:4],
-                        "type": "video" if channel == "lekkerspelen" else "podcast",
+                        "id": content_id,
+                        "type": "video" if channel == "@lekkerspelen" else "podcast",
                         "date": datetime.strptime(video_info.get('upload_date'), "%Y%m%d").strftime('%Y-%m-%d'),
                         "title": video.get('title'),
                         "duration": video_info.get('duration'),

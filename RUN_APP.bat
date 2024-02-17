@@ -1,0 +1,1 @@
+start .\app\.venv\Scripts\python.exe app\app.py
