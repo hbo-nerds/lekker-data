@@ -2,7 +2,7 @@ name: push-to-webapp
 on:
   push:
     branches:
-      - main
+      - master
 jobs:
   create-pull-request:
     runs-on: ubuntu-latest
