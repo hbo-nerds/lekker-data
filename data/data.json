@@ -54,7 +54,7 @@
         },
         {
             "id": 14,
-            "title": "The Lion King"
+            "title": "Lion King"
         },
         {
             "id": 15,
@@ -190,7 +190,7 @@
         },
         {
             "id": 51,
-            "title": "Animal Crossing"
+            "title": "Animal Crossing: New Horizons"
         },
         {
             "id": 52,
@@ -1884,7 +1884,7 @@
             "duration": 952,
             "youtube_id": "K0wnfWSMrY4",
             "collection": 14,
-            "activity": "Lion King"
+            "activity": "The Lion King"
         },
         {
             "id": "a06d",
@@ -1924,7 +1924,7 @@
             "duration": 1086,
             "youtube_id": "04V0ddYmVzU",
             "collection": 14,
-            "activity": "Lion King"
+            "activity": "The Lion King"
         },
         {
             "id": "c572",
@@ -5130,7 +5130,7 @@
             "title": "Lego Racers - lekker spelen",
             "duration": 350,
             "youtube_id": "8SbovIWgoqY",
-            "activity": "lekker spelen"
+            "activity": "Lego racers"
         },
         {
             "id": "8daa",
@@ -6414,7 +6414,7 @@
             "title": "Meer Snipperclips! - Lekker Ruziën",
             "duration": 496,
             "youtube_id": "sxhiuPt_M9I",
-            "activity": "Lekker Ruziën"
+            "activity": "Snipperclips"
         },
         {
             "id": "d0e4",
@@ -6526,7 +6526,7 @@
             "title": "Mario Kart 8 Deluxe - Lekker spelen",
             "duration": 306,
             "youtube_id": "SjSIiYl7pSg",
-            "activity": "Mario Kart 8 Deluxe"
+            "activity": "Mario Kart 8"
         },
         {
             "id": "ea32",
@@ -6631,10 +6631,10 @@
                 "Fifa 17",
                 "Call of Duty Infinite Warfare",
                 "Rocket League",
-                "PUBG",
+                "Playerunknown's Battleground",
                 "Dota 2",
                 "Super Smash Bros. voor 3DS en Wii U",
-                "Mario kart 8"
+                "Mario Kart 8"
             ]
         },
         {
@@ -6735,7 +6735,7 @@
             "title": "LEKKER SPELEN vs SINTERKLAAS",
             "duration": 388,
             "youtube_id": "_uHLJR8KNdM",
-            "activity": "Mario kart 8"
+            "activity": "Mario Kart 8"
         },
         {
             "id": "d26a",
@@ -6772,7 +6772,7 @@
                 "UFC 2",
                 "Rocket League",
                 "Worms Battlegrounds",
-                "Mario kart 8",
+                "Mario Kart 8",
                 "Super Mario Odyssey",
                 "Lethal League"
             ]
@@ -6822,13 +6822,13 @@
             "youtube_id": "CNzuz1EM76g",
             "activity": [
                 "Fifa 18",
-                "PUBG",
+                "Playerunknown's Battleground",
                 "Rocket League",
                 "UFC 3",
                 "Call of Duty WW2",
                 "Kung Fu Panda",
                 "lethal League",
-                "Mario kart 8"
+                "Mario Kart 8"
             ]
         },
         {
@@ -7551,7 +7551,7 @@
             "youtube_id": "uTo6XvNcbko",
             "activity": [
                 "Super Mario Maker 2",
-                "Animal Crossing",
+                "Animal Crossing: New Horizons",
                 "Super Smash Bros Ultimate",
                 "Super Mario Party",
                 "Garfield Kartfield",
@@ -7566,7 +7566,7 @@
             "title": "Lekker spelen - Animal Crossing",
             "duration": 254,
             "youtube_id": "guk017hgqzw",
-            "activity": "Animal Crossing"
+            "activity": "Animal Crossing: New Horizons"
         },
         {
             "id": "9ea9",
@@ -7742,7 +7742,7 @@
                 "Pokémon Violet",
                 "Drawing From Memory",
                 "Five Nights at Freddy's 4",
-                "51 Worldwide Games",
+                "Clubhouse Games: 51 Worldwide Classics",
                 "Super Mario 64",
                 "Super Mario Bros. U Delux"
             ]
@@ -7823,8 +7823,8 @@
                 "Fall Guys",
                 "Mario Party Superstars",
                 "Drawing From Memory",
-                "51 Worldwide Games",
-                "Pokemon Stadium",
+                "Clubhouse Games: 51 Worldwide Classics",
+                "Pokémon Stadium",
                 "Donkey Kong Country"
             ]
         },
@@ -11556,7 +11556,7 @@
             "duration": 3720,
             "youtube_id": "1WjVOMUE1e0",
             "titles": [
-                "Mario Karty 8 Deluxe"
+                "Mario Karty 8"
             ],
             "activities": [
                 {
@@ -12421,7 +12421,7 @@
             ],
             "activities": [
                 {
-                    "title": "PUBG: BATTLEGROUNDS",
+                    "title": "Playerunknown's Battleground",
                     "duration": 12780
                 }
             ],
@@ -12442,7 +12442,7 @@
             ],
             "activities": [
                 {
-                    "title": "PUBG: BATTLEGROUNDS",
+                    "title": "Playerunknown's Battleground",
                     "duration": 6900
                 }
             ],
@@ -12464,7 +12464,7 @@
             ],
             "activities": [
                 {
-                    "title": "PUBG: BATTLEGROUNDS",
+                    "title": "Playerunknown's Battleground",
                     "duration": 8460
                 }
             ],
@@ -12518,7 +12518,7 @@
             ],
             "activities": [
                 {
-                    "title": "PUBG: BATTLEGROUNDS",
+                    "title": "Playerunknown's Battleground",
                     "duration": 8400
                 },
                 {
@@ -12540,11 +12540,11 @@
             "date": "2017-06-11",
             "duration": 10500,
             "titles": [
-                "[AUTO] Lekker Spelen speelt PUBG: BATTLEGROUNDS!"
+                "[AUTO] Lekker Spelen speelt Playerunknown's Battleground: BATTLEGROUNDS!"
             ],
             "activities": [
                 {
-                    "title": "PUBG: BATTLEGROUNDS",
+                    "title": "Playerunknown's Battleground",
                     "duration": 10500
                 }
             ],
@@ -12630,11 +12630,11 @@
             "date": "2017-06-14",
             "duration": 10500,
             "titles": [
-                "[AUTO] Lekker Spelen speelt PUBG: BATTLEGROUNDS!"
+                "[AUTO] Lekker Spelen speelt Playerunknown's Battleground: BATTLEGROUNDS!"
             ],
             "activities": [
                 {
-                    "title": "PUBG: BATTLEGROUNDS",
+                    "title": "Playerunknown's Battleground",
                     "duration": 10500
                 }
             ],
@@ -12677,7 +12677,7 @@
             ],
             "activities": [
                 {
-                    "title": "PUBG: BATTLEGROUNDS",
+                    "title": "Playerunknown's Battleground",
                     "duration": 3720
                 }
             ],
@@ -12699,7 +12699,7 @@
             ],
             "activities": [
                 {
-                    "title": "PUBG: BATTLEGROUNDS",
+                    "title": "Playerunknown's Battleground",
                     "duration": 12960
                 }
             ],
@@ -12721,7 +12721,7 @@
             ],
             "activities": [
                 {
-                    "title": "PUBG: BATTLEGROUNDS",
+                    "title": "Playerunknown's Battleground",
                     "duration": 6120
                 }
             ],
@@ -12904,7 +12904,7 @@
                     "duration": 6240
                 },
                 {
-                    "title": "PUBG: BATTLEGROUNDS",
+                    "title": "Playerunknown's Battleground",
                     "duration": 9900
                 }
             ],
@@ -12926,7 +12926,7 @@
             ],
             "activities": [
                 {
-                    "title": "PUBG: BATTLEGROUNDS",
+                    "title": "Playerunknown's Battleground",
                     "duration": 8640
                 }
             ],
@@ -12973,7 +12973,7 @@
             ],
             "activities": [
                 {
-                    "title": "PUBG: BATTLEGROUNDS",
+                    "title": "Playerunknown's Battleground",
                     "duration": 7440
                 }
             ],
@@ -13040,7 +13040,7 @@
             ],
             "activities": [
                 {
-                    "title": "PUBG: BATTLEGROUNDS",
+                    "title": "Playerunknown's Battleground",
                     "duration": 7200
                 }
             ],
@@ -13083,7 +13083,7 @@
             ],
             "activities": [
                 {
-                    "title": "PUBG: BATTLEGROUNDS",
+                    "title": "Playerunknown's Battleground",
                     "duration": 10500
                 }
             ],
@@ -13109,7 +13109,7 @@
                     "duration": 2880
                 },
                 {
-                    "title": "PUBG: BATTLEGROUNDS",
+                    "title": "Playerunknown's Battleground",
                     "duration": 3000
                 },
                 {
@@ -13131,7 +13131,7 @@
             "date": "2017-07-03",
             "duration": 7680,
             "titles": [
-                "Nooit meer PUBG na deze stream omdat dit de Top 1 is."
+                "Nooit meer Playerunknown's Battleground na deze stream omdat dit de Top 1 is."
             ],
             "activities": [
                 {
@@ -13139,7 +13139,7 @@
                     "duration": 1980
                 },
                 {
-                    "title": "PUBG: BATTLEGROUNDS",
+                    "title": "Playerunknown's Battleground",
                     "duration": 5700
                 }
             ],
@@ -13183,7 +13183,7 @@
             ],
             "activities": [
                 {
-                    "title": "PUBG: BATTLEGROUNDS",
+                    "title": "Playerunknown's Battleground",
                     "duration": 5160
                 }
             ],
@@ -13297,7 +13297,7 @@
             ],
             "activities": [
                 {
-                    "title": "PUBG: BATTLEGROUNDS",
+                    "title": "Playerunknown's Battleground",
                     "duration": 3840
                 }
             ],
@@ -13340,7 +13340,7 @@
             ],
             "activities": [
                 {
-                    "title": "PUBG: BATTLEGROUNDS",
+                    "title": "Playerunknown's Battleground",
                     "duration": 6420
                 }
             ],
@@ -13392,7 +13392,7 @@
             ],
             "activities": [
                 {
-                    "title": "PUBG: BATTLEGROUNDS",
+                    "title": "Playerunknown's Battleground",
                     "duration": 3600
                 },
                 {
@@ -13419,7 +13419,7 @@
             ],
             "activities": [
                 {
-                    "title": "PUBG: BATTLEGROUNDS",
+                    "title": "Playerunknown's Battleground",
                     "duration": 3360
                 }
             ],
@@ -13446,7 +13446,7 @@
                     "duration": 6240
                 },
                 {
-                    "title": "PUBG: BATTLEGROUNDS",
+                    "title": "Playerunknown's Battleground",
                     "duration": 6300
                 }
             ],
@@ -13469,7 +13469,7 @@
             ],
             "activities": [
                 {
-                    "title": "PUBG: BATTLEGROUNDS",
+                    "title": "Playerunknown's Battleground",
                     "duration": 5820
                 }
             ],
@@ -13490,7 +13490,7 @@
             ],
             "activities": [
                 {
-                    "title": "PUBG: BATTLEGROUNDS",
+                    "title": "Playerunknown's Battleground",
                     "duration": 4620
                 }
             ],
@@ -13512,7 +13512,7 @@
             ],
             "activities": [
                 {
-                    "title": "PUBG: BATTLEGROUNDS",
+                    "title": "Playerunknown's Battleground",
                     "duration": 5280
                 }
             ],
@@ -13533,7 +13533,7 @@
             ],
             "activities": [
                 {
-                    "title": "PUBG: BATTLEGROUNDS",
+                    "title": "Playerunknown's Battleground",
                     "duration": 11340
                 }
             ],
@@ -13555,7 +13555,7 @@
             ],
             "activities": [
                 {
-                    "title": "PUBG: BATTLEGROUNDS",
+                    "title": "Playerunknown's Battleground",
                     "duration": 6780
                 }
             ],
@@ -13577,7 +13577,7 @@
             ],
             "activities": [
                 {
-                    "title": "PUBG: BATTLEGROUNDS",
+                    "title": "Playerunknown's Battleground",
                     "duration": 6060
                 }
             ],
@@ -13619,7 +13619,7 @@
             ],
             "activities": [
                 {
-                    "title": "PUBG: BATTLEGROUNDS",
+                    "title": "Playerunknown's Battleground",
                     "duration": 13260
                 }
             ],
@@ -13661,7 +13661,7 @@
             ],
             "activities": [
                 {
-                    "title": "PUBG: BATTLEGROUNDS",
+                    "title": "Playerunknown's Battleground",
                     "duration": 4500
                 }
             ],
@@ -13710,7 +13710,7 @@
             ],
             "activities": [
                 {
-                    "title": "PUBG: BATTLEGROUNDS",
+                    "title": "Playerunknown's Battleground",
                     "duration": 3240
                 }
             ],
@@ -13731,7 +13731,7 @@
             ],
             "activities": [
                 {
-                    "title": "PUBG: BATTLEGROUNDS",
+                    "title": "Playerunknown's Battleground",
                     "duration": 6300
                 }
             ],
@@ -13775,7 +13775,7 @@
             ],
             "activities": [
                 {
-                    "title": "PUBG: BATTLEGROUNDS",
+                    "title": "Playerunknown's Battleground",
                     "duration": 7260
                 }
             ],
@@ -13797,7 +13797,7 @@
             ],
             "activities": [
                 {
-                    "title": "PUBG: BATTLEGROUNDS",
+                    "title": "Playerunknown's Battleground",
                     "duration": 4080
                 }
             ],
@@ -13818,7 +13818,7 @@
             ],
             "activities": [
                 {
-                    "title": "PUBG: BATTLEGROUNDS",
+                    "title": "Playerunknown's Battleground",
                     "duration": 17580
                 },
                 {
@@ -13868,7 +13868,7 @@
             ],
             "activities": [
                 {
-                    "title": "PUBG: BATTLEGROUNDS",
+                    "title": "Playerunknown's Battleground",
                     "duration": 5760
                 }
             ],
@@ -13894,7 +13894,7 @@
                     "duration": 10380
                 },
                 {
-                    "title": "PUBG: BATTLEGROUNDS",
+                    "title": "Playerunknown's Battleground",
                     "duration": 2100
                 }
             ],
@@ -13917,7 +13917,7 @@
             ],
             "activities": [
                 {
-                    "title": "PUBG: BATTLEGROUNDS",
+                    "title": "Playerunknown's Battleground",
                     "duration": 2100
                 },
                 {
@@ -14016,7 +14016,7 @@
                     "duration": 7800
                 },
                 {
-                    "title": "PUBG: BATTLEGROUNDS",
+                    "title": "Playerunknown's Battleground",
                     "duration": 3900
                 }
             ],
@@ -14038,7 +14038,7 @@
             ],
             "activities": [
                 {
-                    "title": "PUBG: BATTLEGROUNDS",
+                    "title": "Playerunknown's Battleground",
                     "duration": 17340
                 }
             ],
@@ -14094,7 +14094,7 @@
             ],
             "activities": [
                 {
-                    "title": "PUBG: BATTLEGROUNDS",
+                    "title": "Playerunknown's Battleground",
                     "duration": 4380
                 },
                 {
@@ -14141,7 +14141,7 @@
             ],
             "activities": [
                 {
-                    "title": "PUBG: BATTLEGROUNDS",
+                    "title": "Playerunknown's Battleground",
                     "duration": 3120
                 }
             ],
@@ -14186,7 +14186,7 @@
             ],
             "activities": [
                 {
-                    "title": "PUBG: BATTLEGROUNDS",
+                    "title": "Playerunknown's Battleground",
                     "duration": 2640
                 }
             ],
@@ -14211,7 +14211,7 @@
                     "duration": 1860
                 },
                 {
-                    "title": "PUBG: BATTLEGROUNDS",
+                    "title": "Playerunknown's Battleground",
                     "duration": 8400
                 },
                 {
@@ -14259,7 +14259,7 @@
             ],
             "activities": [
                 {
-                    "title": "PUBG: BATTLEGROUNDS",
+                    "title": "Playerunknown's Battleground: BATTLEGROUNDS",
                     "duration": 10980
                 }
             ],
@@ -14313,7 +14313,7 @@
             ],
             "activities": [
                 {
-                    "title": "PUBG: BATTLEGROUNDS",
+                    "title": "Playerunknown's Battleground: BATTLEGROUNDS",
                     "duration": 5100
                 }
             ],
@@ -14382,7 +14382,7 @@
             ],
             "activities": [
                 {
-                    "title": "PUBG: BATTLEGROUNDS",
+                    "title": "Playerunknown's Battleground: BATTLEGROUNDS",
                     "duration": 3420
                 }
             ],
@@ -14419,7 +14419,7 @@
                     "duration": 1200
                 },
                 {
-                    "title": "PUBG: BATTLEGROUNDS",
+                    "title": "Playerunknown's Battleground: BATTLEGROUNDS",
                     "duration": 900
                 }
             ],
@@ -14461,7 +14461,7 @@
             ],
             "activities": [
                 {
-                    "title": "PUBG: BATTLEGROUNDS",
+                    "title": "Playerunknown's Battleground: BATTLEGROUNDS",
                     "duration": 9120
                 }
             ],
@@ -14505,7 +14505,7 @@
             ],
             "activities": [
                 {
-                    "title": "PUBG: BATTLEGROUNDS",
+                    "title": "Playerunknown's Battleground: BATTLEGROUNDS",
                     "duration": 4680
                 }
             ],
@@ -14526,7 +14526,7 @@
             ],
             "activities": [
                 {
-                    "title": "PUBG: BATTLEGROUNDS",
+                    "title": "Playerunknown's Battleground: BATTLEGROUNDS",
                     "duration": 5220
                 }
             ],
@@ -14548,7 +14548,7 @@
             ],
             "activities": [
                 {
-                    "title": "PUBG: BATTLEGROUNDS",
+                    "title": "Playerunknown's Battleground: BATTLEGROUNDS",
                     "duration": 1260
                 }
             ],
@@ -14569,7 +14569,7 @@
             ],
             "activities": [
                 {
-                    "title": "PUBG: BATTLEGROUNDS",
+                    "title": "Playerunknown's Battleground: BATTLEGROUNDS",
                     "duration": 9720
                 }
             ],
@@ -14590,7 +14590,7 @@
             ],
             "activities": [
                 {
-                    "title": "PUBG: BATTLEGROUNDS",
+                    "title": "Playerunknown's Battleground: BATTLEGROUNDS",
                     "duration": 4500
                 }
             ],
@@ -14628,7 +14628,7 @@
                     "duration": 5100
                 },
                 {
-                    "title": "PUBG: BATTLEGROUNDS",
+                    "title": "Playerunknown's Battleground: BATTLEGROUNDS",
                     "duration": 10800
                 },
                 {
@@ -14684,7 +14684,7 @@
                     "duration": 4200
                 },
                 {
-                    "title": "PUBG: BATTLEGROUNDS",
+                    "title": "Playerunknown's Battleground: BATTLEGROUNDS",
                     "duration": 11700
                 },
                 {
@@ -14760,7 +14760,7 @@
             ],
             "activities": [
                 {
-                    "title": "PUBG: BATTLEGROUNDS",
+                    "title": "Playerunknown's Battleground: BATTLEGROUNDS",
                     "duration": 5040
                 },
                 {
@@ -14835,7 +14835,7 @@
             ],
             "activities": [
                 {
-                    "title": "PUBG: BATTLEGROUNDS",
+                    "title": "Playerunknown's Battleground: BATTLEGROUNDS",
                     "duration": 3540
                 },
                 {
@@ -14899,7 +14899,7 @@
                     "duration": 1500
                 },
                 {
-                    "title": "PUBG: BATTLEGROUNDS",
+                    "title": "Playerunknown's Battleground: BATTLEGROUNDS",
                     "duration": 3900
                 }
             ],
@@ -14924,7 +14924,7 @@
                     "duration": 7620
                 },
                 {
-                    "title": "PUBG: BATTLEGROUNDS",
+                    "title": "Playerunknown's Battleground: BATTLEGROUNDS",
                     "duration": 5100
                 }
             ],
@@ -14971,7 +14971,7 @@
                     "duration": 2640
                 },
                 {
-                    "title": "PUBG: BATTLEGROUNDS",
+                    "title": "Playerunknown's Battleground: BATTLEGROUNDS",
                     "duration": 8700
                 }
             ],
@@ -14992,7 +14992,7 @@
             ],
             "activities": [
                 {
-                    "title": "PUBG: BATTLEGROUNDS",
+                    "title": "Playerunknown's Battleground: BATTLEGROUNDS",
                     "duration": 10140
                 }
             ],
@@ -15017,7 +15017,7 @@
                     "duration": 6180
                 },
                 {
-                    "title": "PUBG: BATTLEGROUNDS",
+                    "title": "Playerunknown's Battleground: BATTLEGROUNDS",
                     "duration": 4500
                 }
             ],
@@ -15059,7 +15059,7 @@
             ],
             "activities": [
                 {
-                    "title": "PUBG: BATTLEGROUNDS",
+                    "title": "Playerunknown's Battleground: BATTLEGROUNDS",
                     "duration": 3360
                 }
             ],
@@ -15190,7 +15190,7 @@
             ],
             "activities": [
                 {
-                    "title": "PUBG: BATTLEGROUNDS",
+                    "title": "Playerunknown's Battleground: BATTLEGROUNDS",
                     "duration": 18060
                 }
             ],
@@ -15233,7 +15233,7 @@
             ],
             "activities": [
                 {
-                    "title": "PUBG: BATTLEGROUNDS",
+                    "title": "Playerunknown's Battleground: BATTLEGROUNDS",
                     "duration": 9960
                 }
             ],
@@ -15275,7 +15275,7 @@
             ],
             "activities": [
                 {
-                    "title": "PUBG: BATTLEGROUNDS",
+                    "title": "Playerunknown's Battleground: BATTLEGROUNDS",
                     "duration": 5100
                 },
                 {
@@ -15373,7 +15373,7 @@
             ],
             "activities": [
                 {
-                    "title": "PUBG: BATTLEGROUNDS",
+                    "title": "Playerunknown's Battleground: BATTLEGROUNDS",
                     "duration": 7560
                 },
                 {
@@ -15421,7 +15421,7 @@
             ],
             "activities": [
                 {
-                    "title": "PUBG: BATTLEGROUNDS",
+                    "title": "Playerunknown's Battleground: BATTLEGROUNDS",
                     "duration": 6600
                 }
             ],
@@ -15481,7 +15481,7 @@
             ],
             "activities": [
                 {
-                    "title": "PUBG: BATTLEGROUNDS",
+                    "title": "Playerunknown's Battleground: BATTLEGROUNDS",
                     "duration": 3960
                 },
                 {
@@ -15558,7 +15558,7 @@
             ],
             "activities": [
                 {
-                    "title": "PUBG: BATTLEGROUNDS",
+                    "title": "Playerunknown's Battleground: BATTLEGROUNDS",
                     "duration": 2580
                 }
             ],
@@ -15720,7 +15720,7 @@
             ],
             "activities": [
                 {
-                    "title": "PUBG: BATTLEGROUNDS",
+                    "title": "Playerunknown's Battleground: BATTLEGROUNDS",
                     "duration": 2880
                 },
                 {
@@ -16215,7 +16215,7 @@
             ],
             "activities": [
                 {
-                    "title": "PUBG: BATTLEGROUNDS",
+                    "title": "Playerunknown's Battleground: BATTLEGROUNDS",
                     "duration": 11040
                 }
             ],
@@ -16326,7 +16326,7 @@
             ],
             "activities": [
                 {
-                    "title": "PUBG: BATTLEGROUNDS",
+                    "title": "Playerunknown's Battleground: BATTLEGROUNDS",
                     "duration": 6540
                 }
             ],
@@ -16413,7 +16413,7 @@
             ],
             "activities": [
                 {
-                    "title": "PUBG: BATTLEGROUNDS",
+                    "title": "Playerunknown's Battleground: BATTLEGROUNDS",
                     "duration": 3360
                 }
             ],
@@ -16435,7 +16435,7 @@
             ],
             "activities": [
                 {
-                    "title": "The Lion King",
+                    "title": "Lion King",
                     "duration": 2220
                 },
                 {
@@ -17221,7 +17221,7 @@
             ],
             "activities": [
                 {
-                    "title": "PUBG: BATTLEGROUNDS",
+                    "title": "Playerunknown's Battleground: BATTLEGROUNDS",
                     "duration": 9060
                 },
                 {
@@ -17356,7 +17356,7 @@
             ],
             "activities": [
                 {
-                    "title": "PUBG: BATTLEGROUNDS",
+                    "title": "Playerunknown's Battleground: BATTLEGROUNDS",
                     "duration": 8940
                 }
             ],
@@ -17434,7 +17434,7 @@
                     "duration": 2400
                 },
                 {
-                    "title": "PUBG: BATTLEGROUNDS",
+                    "title": "Playerunknown's Battleground: BATTLEGROUNDS",
                     "duration": 1500
                 }
             ],
@@ -17670,7 +17670,7 @@
             ],
             "activities": [
                 {
-                    "title": "PUBG: BATTLEGROUNDS",
+                    "title": "Playerunknown's Battleground: BATTLEGROUNDS",
                     "duration": 4800
                 }
             ],
@@ -17691,7 +17691,7 @@
             ],
             "activities": [
                 {
-                    "title": "PUBG: BATTLEGROUNDS",
+                    "title": "Playerunknown's Battleground: BATTLEGROUNDS",
                     "duration": 6300
                 }
             ],
@@ -17733,7 +17733,7 @@
             ],
             "activities": [
                 {
-                    "title": "PUBG: BATTLEGROUNDS",
+                    "title": "Playerunknown's Battleground: BATTLEGROUNDS",
                     "duration": 5220
                 }
             ],
@@ -18067,7 +18067,7 @@
                     "duration": 3600
                 },
                 {
-                    "title": "PUBG: BATTLEGROUNDS",
+                    "title": "Playerunknown's Battleground: BATTLEGROUNDS",
                     "duration": 3300
                 }
             ],
@@ -19683,11 +19683,11 @@
             "date": "2018-04-03",
             "duration": 6720,
             "titles": [
-                "nieuw pubg mappie"
+                "nieuw Playerunknown's Battleground mappie"
             ],
             "activities": [
                 {
-                    "title": "PUBG: BATTLEGROUNDS",
+                    "title": "Playerunknown's Battleground: BATTLEGROUNDS",
                     "duration": 4620
                 },
                 {
@@ -19919,7 +19919,7 @@
             ],
             "activities": [
                 {
-                    "title": "PUBG: BATTLEGROUNDS",
+                    "title": "Playerunknown's Battleground: BATTLEGROUNDS",
                     "duration": 5040
                 },
                 {
@@ -21024,7 +21024,7 @@
             ],
             "activities": [
                 {
-                    "title": "PUBG: BATTLEGROUNDS",
+                    "title": "Playerunknown's Battleground: BATTLEGROUNDS",
                     "duration": 3480
                 },
                 {
@@ -21123,7 +21123,7 @@
                     "duration": 1500
                 },
                 {
-                    "title": "PUBG: BATTLEGROUNDS",
+                    "title": "Playerunknown's Battleground: BATTLEGROUNDS",
                     "duration": 1800
                 },
                 {
@@ -29788,11 +29788,11 @@
             "duration": 6660,
             "youtube_id": "BMomRF259Ek",
             "titles": [
-                "Terug naar PUBG"
+                "Terug naar Playerunknown's Battleground"
             ],
             "activities": [
                 {
-                    "title": "PUBG: BATTLEGROUNDS",
+                    "title": "Playerunknown's Battleground: BATTLEGROUNDS",
                     "duration": 6660
                 }
             ],
@@ -35175,7 +35175,7 @@
                     "duration": 1200
                 },
                 {
-                    "title": "Mario Kart 8 Deluxe",
+                    "title": "Mario Kart 8",
                     "duration": 1800
                 },
                 {
@@ -39375,7 +39375,7 @@
             ],
             "activities": [
                 {
-                    "title": "Mario Kart 8 Deluxe",
+                    "title": "Mario Kart 8",
                     "duration": 6780
                 }
             ],
@@ -39466,7 +39466,7 @@
             ],
             "activities": [
                 {
-                    "title": "Mario Kart 8 Deluxe",
+                    "title": "Mario Kart 8",
                     "duration": 4800
                 }
             ],
@@ -39515,7 +39515,7 @@
                     "duration": 4620
                 },
                 {
-                    "title": "Mario Kart 8 Deluxe",
+                    "title": "Mario Kart 8",
                     "duration": 2100
                 }
             ],
@@ -39656,7 +39656,7 @@
             ],
             "activities": [
                 {
-                    "title": "Mario Kart 8 Deluxe",
+                    "title": "Mario Kart 8",
                     "duration": 5820
                 }
             ],
@@ -39677,7 +39677,7 @@
             ],
             "activities": [
                 {
-                    "title": "Mario Kart 8 Deluxe",
+                    "title": "Mario Kart 8",
                     "duration": 6300
                 }
             ],
@@ -39719,7 +39719,7 @@
             ],
             "activities": [
                 {
-                    "title": "Mario Kart 8 Deluxe",
+                    "title": "Mario Kart 8",
                     "duration": 5220
                 }
             ],
@@ -39834,7 +39834,7 @@
             ],
             "activities": [
                 {
-                    "title": "Mario Kart 8 Deluxe",
+                    "title": "Mario Kart 8",
                     "duration": 5880
                 }
             ],
@@ -40858,7 +40858,7 @@
             ],
             "activities": [
                 {
-                    "title": "Mario Kart 8 Deluxe",
+                    "title": "Mario Kart 8",
                     "duration": 13080
                 }
             ],
@@ -40927,7 +40927,7 @@
             ],
             "activities": [
                 {
-                    "title": "Mario Kart 8 Deluxe",
+                    "title": "Mario Kart 8",
                     "duration": 5460
                 }
             ],
@@ -42345,7 +42345,7 @@
             ],
             "activities": [
                 {
-                    "title": "Mario Kart 8 Deluxe",
+                    "title": "Mario Kart 8",
                     "duration": 4740
                 }
             ],
@@ -43093,7 +43093,7 @@
             ],
             "activities": [
                 {
-                    "title": "Mario Kart 8 Deluxe",
+                    "title": "Mario Kart 8",
                     "duration": 5760
                 },
                 {
@@ -44266,7 +44266,7 @@
             ],
             "activities": [
                 {
-                    "title": "Mario Kart 8 Deluxe",
+                    "title": "Mario Kart 8",
                     "duration": 6720
                 }
             ],
@@ -44480,10 +44480,6 @@
                 {
                     "title": "Abandoned Souls",
                     "duration": 4620
-                },
-                {
-                    "title": "Drawing From Memory",
-                    "duration": 900
                 }
             ],
             "twitchtracker_id": "40975043576",
@@ -45358,7 +45354,7 @@
             ],
             "activities": [
                 {
-                    "title": "The Lion King",
+                    "title": "Lion King",
                     "duration": 18360
                 }
             ],
@@ -45381,7 +45377,7 @@
             ],
             "activities": [
                 {
-                    "title": "Mario Kart 8 Deluxe",
+                    "title": "Mario Kart 8",
                     "duration": 6960
                 }
             ],
