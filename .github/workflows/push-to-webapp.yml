@@ -1,0 +1,38 @@
+name: push-to-webapp
+on:
+  push:
+    branches:
+      - main
+jobs:
+  create-pull-request:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Source repository checkout
+        uses: actions/checkout@v4
+
+      - name: Repository checkout
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.PAT }}
+          path: 'dest'
+          ref: 'master'
+          fetch_depth: 0
+          repository: 'lekkersicko/lekkersicko.github.io'
+
+      - run: rm -rf dest/src/assets/data
+      - run: mkdir -p dest/src/assets/data
+      - run: cp data/data.json dest/src/assets/data
+      
+      - run: rm -rf dest/src/assets/img/thumbnails
+      - run: mkdir -p dest/src/assets/img/thumbnails
+      - run: cp -r thumbnails dest/src/assets/img/thumbnails
+
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v6  
+        with:
+          token: ${{ secrets.PAT }}
+          branch: 'updates/data'
+          title: 'Update thumbnails and content data'
+          body: 'Update thumbnails and content data'
+          commit-message: 'update: thumbnails and content data'
+          path: 'dest'
