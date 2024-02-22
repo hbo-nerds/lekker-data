@@ -43493,31 +43493,31 @@
             "time_start": "20:31:00",
             "time_end": "22:35:00"
         },
-      {
-        "id": "dd9e",
-        "type": "stream",
-        "date": "2023-04-26",
-        "duration": 9060,
-        "youtube_id": "cNhDcyQN_0o",
-        "titles": [
-          "Dora the Explorer (maar dan geflipt)"
-        ],
-        "activities": [
-          {
-            "title": "Amanda the Adventurer",
-            "duration": 9060
-          }
-        ],
-        "twitchtracker_id": "40685497672",
-        "twitch_id": "1804390617",
-        "tags": [
-          "main",
-          "escaperoom"
-        ],
-        "time_start": "20:33:00",
-        "time_end": "23:05:00",
-        "description": "Peter en Timon spelen Amanda the Adventurer, een soort horror escape room gebaseerd op een videotape van een geflipte versie van Dora. Lekker griezelen."
-      },
+        {
+            "id": "dd9e",
+            "type": "stream",
+            "date": "2023-04-26",
+            "duration": 9060,
+            "youtube_id": "cNhDcyQN_0o",
+            "titles": [
+                "Dora the Explorer (maar dan geflipt)"
+            ],
+            "activities": [
+                {
+                    "title": "Amanda the Adventurer",
+                    "duration": 9060
+                }
+            ],
+            "twitchtracker_id": "40685497672",
+            "twitch_id": "1804390617",
+            "tags": [
+                "main",
+                "escaperoom"
+            ],
+            "time_start": "20:33:00",
+            "time_end": "23:05:00",
+            "description": "Peter en Timon spelen Amanda the Adventurer, een soort horror escape room gebaseerd op een videotape van een geflipte versie van Dora. Lekker griezelen."
+        },
         {
             "id": "001b",
             "type": "stream",
@@ -45609,8 +45609,8 @@
         {
             "twitchtracker_id": "41835203496",
             "date": "2024-02-05",
-            "time_start": "20:33",
-            "time_end": "22:35",
+            "time_start": "20:33:00",
+            "time_end": "22:35:00",
             "titles": [
                 "ZE ZIJN TERUG EN ZIELIGER DAN OOIT"
             ],
@@ -45638,8 +45638,8 @@
         {
             "twitchtracker_id": "40421078021",
             "date": "2024-02-07",
-            "time_start": "19:30",
-            "time_end": "21:35",
+            "time_start": "19:30:00",
+            "time_end": "21:35:00",
             "titles": [
                 "Efteling de game"
             ],
