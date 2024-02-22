@@ -5,6 +5,7 @@ import requests
 import json
 import yt_dlp
 from datetime import datetime, timedelta
+from pytz import timezone
 
 from modules.image_convert import process_images
 
@@ -25,6 +26,7 @@ def scrape_stream():
     
     _get_streams_from_youtube(data, twitch_data)
 
+    twitch_data.reverse()
 
     for content_data in twitch_data:
         while True:
@@ -47,6 +49,11 @@ def _get_streams_from_twitch(data):
     print("- Twitch -")
     existing_ids = []
 
+    data["content"].sort(key=_get_datetime_data_item)
+    latest = data["content"][-1]
+    latest_datetime = _get_datetime_data_item(latest)
+    print(f"Zoeken naar streams na laatst bekende stream op {latest_datetime}")
+
     for item in data["content"]:
         if "twitch_id" in item:
             existing_ids.append(item["twitch_id"])
@@ -56,48 +63,69 @@ def _get_streams_from_twitch(data):
         "Client-Id": TWITCH_API_CLIENT_ID
     }
 
-    res = requests.get("https://api.twitch.tv/helix/videos?user_id=52385053&type=archive", headers=authorization_headers)
+    res = requests.get("https://api.twitch.tv/helix/videos?user_id=52385053&first=100", headers=authorization_headers)
     json_data = res.json()
 
-    t_data = []
-    t_ids = []
+    if 'status' in json_data and json_data['status'] == 401:
+        print('Inloggen mislukt!')
+        return []
+
+    twitch_data = []
+    archive_ids = []
+    highlight_ids = []
 
     for item in json_data['data']:
-        if item['id'] not in existing_ids:
-            t_ids.append((item['id'], item))
+        if item['type'] == 'highlight' and item['id'] not in existing_ids:
+            highlight_ids.append((item['id'], item))
+            continue
+        dt = datetime.fromisoformat(item["created_at"].replace("Z", ""))
+        if item['type'] == 'archive' and dt >= latest_datetime:
+            archive_ids.append((item['id'], item))
 
-    if not t_ids:
+    if not archive_ids:
         print("Geen nieuwe streams op Twitch gevonden")
-        return t_data
+        return twitch_data
     
-    print(f"Ik heb {len(t_ids)} nieuwe streams gevonden op Twitch")
+    print(f"Ik heb {len(archive_ids)} nieuwe streams gevonden op Twitch")
 
-    for id, item in t_ids:
+    for id, item in archive_ids:
         title = item["title"]
         print(f"\nStream {id} met titel: {title}")
-        t_data.append(_build_stream_item(item))
+        twitch_data.append(_build_stream_item(item))
 
-    return t_data
+    for id, item in highlight_ids:
+        title = item["title"]
+        corresponding = [item for item in twitch_data if item['titles'][0] == title]
+        if len(corresponding) == 1:
+            corresponding[0]['twitch_id'] = item['id']
+            print(f'Match higlight en stream met title: {title}')
+
+    return twitch_data
+
+    # -----------------------------
+
+def _get_datetime_data_item(item):
+    if 'time_start' not in item and 'date' not in item:
+        return datetime(1970, 1, 1, 0, 0, 0)
+    if 'time_start' not in item: 
+        return datetime.strptime(item["date"], "%Y-%m-%d")
+    
+    return datetime.strptime(item["date"] + " " + item["time_start"], "%Y-%m-%d %H:%M:%S")
 
     # -----------------------------
 
 def _build_stream_item(item):
     # --- STREAM DURATION ---
     duration_string = item["duration"]
-    hours = int(duration_string.split("h")[0] or "0")
-    minutes = int(duration_string.split("h")[1].split("m")[0] or "0")
-    total_seconds = (hours * 60 + minutes) * 60
+    total_seconds = _get_seconds_form_duration_string(duration_string)
 
     # --- STREAM DATE ---
     date_string = item["created_at"].split("T")[0]
 
     # --- STREAM START/END ---
-    # make sure time zone is set to NL
-    os.environ['TZ'] = 'Europe/Amsterdam' # set new timezone
-    time.tzset()
-    
     # set time start and time end based on created_at and duration
     time_start = datetime.fromisoformat(item["created_at"].replace("Z", "") + "+00:00")
+    time_start = time_start.astimezone(timezone('Europe/Amsterdam'))
     time_end = time_start + timedelta(0, total_seconds)
 
     # --- STREAM TITLES ---
@@ -135,20 +163,33 @@ def _build_stream_item(item):
     process_images(response.content, twitch_id, "stream_twitch")
 
     data = {
-        "twitch_id": twitch_id,
         "date": date_string,
-        "time_start": time_start.strftime("%H:%M"),
-        "time_end": time_end.strftime("%H:%M"),
+        "time_start": time_start.strftime("%H:%M:%S"),
+        "time_end": time_end.strftime("%H:%M:%S"),
         "titles": titles,
         "activities": activities,
         "duration": total_seconds,
     }
 
-    print(data)
-
     return data
 
     # -----------------------------
+
+def _get_seconds_form_duration_string(duration_string):
+    if 'h' in duration_string:
+        split = duration_string.split("h")
+        duration_string = split[1]
+        hours = int(split[0] or "0")
+    if 'm' in duration_string:
+        split = duration_string.split("m")
+        duration_string = split[1]
+        minutes = int(split[0] or "0")
+    if 's' in duration_string:
+        split = duration_string.split("s")
+        seconds = int(split[0] or "0")
+    
+    total_seconds = (hours * 60 + minutes) * 60 + seconds 
+    return total_seconds
 
 
 def _get_streams_from_youtube(data, twitch_data):
@@ -176,7 +217,7 @@ def _get_streams_from_youtube(data, twitch_data):
         new_streams.append(streams[i])
         yt_id = streams[i]["id"]
         yt_title = streams[i]["title"]
-        twitch_id = t["twitch_id"]
+        twitch_id = t["twitch_id"] if "twitch_id" in t else ""
         twitch_title = t["titles"][0]
         print("\nVolgende Youtube - Twitch koppeling gemaakt:")
         print(f"Youtube stream: ({yt_id}) {yt_title}")
