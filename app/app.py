@@ -1,3 +1,6 @@
+from dotenv import load_dotenv
+load_dotenv()
+
 from modules.stream_scraper import scrape_stream
 from modules.video_scraper import scrape_video
 from modules.video_scraper_third_party import scrape_third_party_video
