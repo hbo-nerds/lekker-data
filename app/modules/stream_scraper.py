@@ -222,7 +222,7 @@ def _get_streams_from_youtube(data, twitch_data):
         print("\nVolgende Youtube - Twitch koppeling gemaakt:")
         print(f"Youtube stream: ({yt_id}) {yt_title}")
         print(f"Twitch stream: ({twitch_id}) {twitch_title}")
-        t["youtube_id"] = yt_id[i]
+        t["youtube_id"] = yt_id
 
     print("\nControleer bovenstaande koppelingen goed!")
 
