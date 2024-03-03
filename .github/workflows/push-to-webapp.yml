@@ -25,7 +25,7 @@ jobs:
       
       - run: rm -rf dest/src/assets/img/thumbnails
       - run: mkdir -p dest/src/assets/img/thumbnails
-      - run: cp -r thumbnails dest/src/assets/img/thumbnails
+      - run: cp -r -n thumbnails dest/src/assets/img
 
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v6  
