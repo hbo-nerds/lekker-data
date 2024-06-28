@@ -21300,6 +21300,7 @@
             "id": "ca7f",
             "type": "stream",
             "date": "2018-04-07",
+            "youtube_id": "AW5JX0FPibs",
             "duration": 44400,
             "titles": [
                 "12 UUR STREAM MARATHON"
@@ -50411,6 +50412,25 @@
             "duration": 9761,
             "youtube_id": "qqUBc284DZY",
             "id": "d4c9",
+            "type": "stream"
+        },
+        {
+            "date": "2024-06-26",
+            "time_start": "20:38:38",
+            "time_end": "22:10:16",
+            "titles": [
+                "PETER vs TIMON: Juni⭐"
+            ],
+            "activities": [
+                {
+                    "title": "Speciale Evenementen",
+                    "duration": 1
+                }
+            ],
+            "duration": 5498,
+            "twitch_id": "2182435429",
+            "youtube_id": "p938a4KhsR0",
+            "id": "3d94",
             "type": "stream"
         }
     ]
