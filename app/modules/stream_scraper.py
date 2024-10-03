@@ -91,7 +91,9 @@ def _get_streams_from_twitch(data):
     for id, item in archive_ids:
         title = item["title"]
         print(f"\nStream {id} met titel: {title}")
-        twitch_data.append(_build_stream_item(item))
+        stream_item = _build_stream_item(item)
+        if stream_item:
+            twitch_data.append(stream_item)
 
     for id, item in highlight_ids:
         title = item["title"]
@@ -119,6 +121,12 @@ def _build_stream_item(item):
     duration_string = item["duration"]
     total_seconds = _get_seconds_form_duration_string(duration_string)
 
+    if total_seconds < 60 * 60:
+        print(f"Deze stream duurt minder dan een uur. Overslaan?")
+        answer = input("Ja/Nee: ").lower()
+        if answer[:1] == "j":
+            return None
+    
     # --- STREAM DATE ---
     date_string = item["created_at"].split("T")[0]
 
@@ -151,7 +159,7 @@ def _build_stream_item(item):
                 duration = int(input("Duur (in seconden): "))
                 break
             except:
-                print('Ongeledige duur, probeer het nog eens.')
+                print('Ongeldige duur, probeer het nog eens.')
                 continue
         
         activities.append({"title": title, "duration": duration})
@@ -176,6 +184,10 @@ def _build_stream_item(item):
     # -----------------------------
 
 def _get_seconds_form_duration_string(duration_string):
+    hours = 0
+    minutes = 0
+    seconds = 0
+
     if 'h' in duration_string:
         split = duration_string.split("h")
         duration_string = split[1]
