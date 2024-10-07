@@ -17,7 +17,7 @@ jobs:
           path: 'dest'
           ref: 'master'
           fetch_depth: 0
-          repository: 'lekkersicko/lekkersicko.github.io'
+          repository: 'hbo-nerds/hbo-nerds.github.io'
 
       - run: rm -rf dest/src/assets/data
       - run: mkdir -p dest/src/assets/data
