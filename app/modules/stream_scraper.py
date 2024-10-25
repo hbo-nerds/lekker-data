@@ -1,4 +1,5 @@
 import os
+import re
 import time
 import uuid
 import requests
@@ -183,25 +184,15 @@ def _build_stream_item(item):
 
     # -----------------------------
 
+ISO_DURATION_RE = re.compile(r'^((\d+)h)?((\d+)m)?((\d+)s)?$', re.I)
 def _get_seconds_form_duration_string(duration_string):
-    hours = 0
-    minutes = 0
-    seconds = 0
-
-    if 'h' in duration_string:
-        split = duration_string.split("h")
-        duration_string = split[1]
-        hours = int(split[0] or "0")
-    if 'm' in duration_string:
-        split = duration_string.split("m")
-        duration_string = split[1]
-        minutes = int(split[0] or "0")
-    if 's' in duration_string:
-        split = duration_string.split("s")
-        seconds = int(split[0] or "0")
+    match = ISO_DURATION_RE.match(duration_string)
     
-    total_seconds = (hours * 60 + minutes) * 60 + seconds 
-    return total_seconds
+    hours = int(match.group(2) or 0)
+    minutes = int(match.group(4) or 0)
+    seconds = int(match.group(6) or 0)
+    
+    return hours * 3600 + minutes * 60 + seconds
 
 
 def _get_streams_from_youtube(data, twitch_data):
