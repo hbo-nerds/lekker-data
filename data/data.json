@@ -32942,26 +32942,27 @@
             "time_end": "03:45:00"
         },
         {
-            "id": "41c6",
-            "type": "stream",
-            "date": "2020-03-04",
-            "duration": 14520,
-            "titles": [
-                "oefenpotje met peetje (en de rest)"
-            ],
-            "activities": [
-                {
-                    "title": "Tom Clancy's Rainbow Six Siege",
-                    "duration": 14520
-                }
-            ],
-            "twitchtracker_id": "766916897",
-            "tags": [
-                "main",
-                "solo"
-            ],
-            "time_start": "00:12:00",
-            "time_end": "04:15:00"
+          "id": "41c6",
+          "type": "stream",
+          "youtube_id": "uMyNZcxEBpI ",
+          "date": "2020-03-04",
+          "duration": 14520,
+          "titles": [
+            "oefenpotje met peetje (en de rest)"
+          ],
+          "activities": [
+            {
+              "title": "Tom Clancy's Rainbow Six Siege",
+              "duration": 14520
+            }
+          ],
+          "twitchtracker_id": "766916897",
+          "tags": [
+            "main",
+            "solo"
+          ],
+          "time_start": "00:12:00",
+          "time_end": "04:15:00"
         },
         {
             "id": "d7fb",
@@ -33096,48 +33097,50 @@
             "activity": "Wii Sports Resort"
         },
         {
-            "id": "296b",
-            "type": "stream",
-            "date": "2020-03-15",
-            "duration": 1200,
-            "titles": [
-                "potje met peetje"
-            ],
-            "activities": [
-                {
-                    "title": "Games + Demos",
-                    "duration": 1200
-                }
-            ],
-            "twitchtracker_id": "844065745",
-            "tags": [
-                "casual",
-                "solo"
-            ],
-            "time_start": "00:14:00",
-            "time_end": "00:35:00"
+          "id": "296b",
+          "type": "stream",
+          "date": "2020-03-15",
+          "youtube_id": "LDZCwlcoqrI",
+          "duration": 1200,
+          "titles": [
+            "potje met peetje"
+          ],
+          "activities": [
+            {
+              "title": "Games + Demos",
+              "duration": 1200
+            }
+          ],
+          "twitchtracker_id": "844065745",
+          "tags": [
+            "casual",
+            "solo"
+          ],
+          "time_start": "00:14:00",
+          "time_end": "00:35:00"
         },
         {
-            "id": "3e8c",
-            "type": "stream",
-            "date": "2020-03-15",
-            "duration": 15300,
-            "titles": [
-                "potje met peetje"
-            ],
-            "activities": [
-                {
-                    "title": "Games + Demos",
-                    "duration": 15300
-                }
-            ],
-            "twitchtracker_id": "844273953",
-            "tags": [
-                "casual",
-                "solo"
-            ],
-            "time_start": "00:49:00",
-            "time_end": "05:05:00"
+          "id": "3e8c",
+          "type": "stream",
+          "date": "2020-03-15",
+          "youtube_id": "k_wbFr1zQ_k",
+          "duration": 15300,
+          "titles": [
+            "potje met peetje"
+          ],
+          "activities": [
+            {
+              "title": "Call of Duty: Warzone",
+              "duration": 15300
+            }
+          ],
+          "twitchtracker_id": "844273953",
+          "tags": [
+            "casual",
+            "solo"
+          ],
+          "time_start": "00:49:00",
+          "time_end": "05:05:00"
         },
         {
             "id": "b512",
@@ -33149,10 +33152,6 @@
                 "potje met peetje"
             ],
             "activities": [
-                {
-                    "title": "Games + Demos",
-                    "duration": 1560
-                },
                 {
                     "title": "Tom Clancy's Rainbow Six Siege",
                     "duration": 6600
@@ -33171,30 +33170,31 @@
             "time_end": "23:05:00"
         },
         {
-            "id": "66a9",
-            "type": "stream",
-            "date": "2020-03-16",
-            "duration": 14400,
-            "titles": [
-                "potje met peetje (lockdown)"
-            ],
-            "activities": [
-                {
-                    "title": "Call of Duty: Warzone",
-                    "duration": 2100
-                },
-                {
-                    "title": "Variety",
-                    "duration": 12300
-                }
-            ],
-            "twitchtracker_id": "853665681",
-            "tags": [
-                "main",
-                "solo"
-            ],
-            "time_start": "00:44:00",
-            "time_end": "04:45:00"
+          "id": "66a9",
+          "type": "stream",
+          "youtube_id": "C9kp-5oHom8",
+          "date": "2020-03-16",
+          "duration": 14400,
+          "titles": [
+            "potje met peetje (lockdown)"
+          ],
+          "activities": [
+            {
+              "title": "Call of Duty: Warzone",
+              "duration": 2100
+            },
+            {
+              "title": "Variety",
+              "duration": 12300
+            }
+          ],
+          "twitchtracker_id": "853665681",
+          "tags": [
+            "main",
+            "solo"
+          ],
+          "time_start": "00:44:00",
+          "time_end": "04:45:00"
         },
         {
             "id": "1a09",
@@ -33267,26 +33267,27 @@
             "time_end": "22:25:00"
         },
         {
-            "id": "4326",
-            "type": "stream",
-            "date": "2020-03-18",
-            "duration": 9420,
-            "titles": [
-                "potje met peetje"
-            ],
-            "activities": [
-                {
-                    "title": "Tom Clancy's Rainbow Six Siege",
-                    "duration": 9420
-                }
-            ],
-            "twitchtracker_id": "881715201",
-            "tags": [
-                "main",
-                "solo"
-            ],
-            "time_start": "23:17:00",
-            "time_end": "01:55:00"
+          "id": "4326",
+          "type": "stream",
+          "date": "2020-03-18",
+          "youtube_id": "blD9PeEyvq0",
+          "duration": 9420,
+          "titles": [
+            "potje met peetje"
+          ],
+          "activities": [
+            {
+              "title": "Tom Clancy's Rainbow Six Siege",
+              "duration": 9420
+            }
+          ],
+          "twitchtracker_id": "881715201",
+          "tags": [
+            "main",
+            "solo"
+          ],
+          "time_start": "23:17:00",
+          "time_end": "01:55:00"
         },
         {
             "id": "6ba8",
@@ -36456,67 +36457,26 @@
             "time_end": "22:45:00"
         },
         {
-            "id": "de30",
-            "type": "stream",
-            "date": "2020-10-29",
-            "duration": 1260,
-            "titles": [
-                "this is a test"
-            ],
-            "activities": [
-                {
-                    "title": "Call of Duty: Warzone",
-                    "duration": 1260
-                }
-            ],
-            "twitchtracker_id": "39808255884",
-            "tags": [
-                "casual"
-            ],
-            "time_start": "00:43:00",
-            "time_end": "01:05:00"
-        },
-        {
-            "id": "ea0b",
-            "type": "stream",
-            "date": "2020-10-29",
-            "duration": 1200,
-            "titles": [
-                "this is a test"
-            ],
-            "activities": [
-                {
-                    "title": "Call of Duty: Warzone",
-                    "duration": 1200
-                }
-            ],
-            "twitchtracker_id": "39808404028",
-            "tags": [
-                "casual"
-            ],
-            "time_start": "01:24:00",
-            "time_end": "01:45:00"
-        },
-        {
-            "id": "0f25",
-            "type": "stream",
-            "date": "2020-10-29",
-            "duration": 1620,
-            "titles": [
-                "this is a test"
-            ],
-            "activities": [
-                {
-                    "title": "Call of Duty: Warzone",
-                    "duration": 1620
-                }
-            ],
-            "twitchtracker_id": "39808558972",
-            "tags": [
-                "casual"
-            ],
-            "time_start": "02:27:00",
-            "time_end": "02:55:00"
+          "id": "de30",
+          "type": "stream",
+          "youtube_id": "_INMj4bWhGg",
+          "date": "2020-10-29",
+          "duration": 1260,
+          "titles": [
+            "this is a test"
+          ],
+          "activities": [
+            {
+              "title": "Call of Duty: Warzone",
+              "duration": 1260
+            }
+          ],
+          "twitchtracker_id": "39808255884",
+          "tags": [
+            "casual"
+          ],
+          "time_start": "00:43:00",
+          "time_end": "01:05:00"
         },
         {
             "id": "e73b",
@@ -38672,26 +38632,27 @@
             "time_end": "22:45:00"
         },
         {
-            "id": "6046",
-            "type": "stream",
-            "date": "2021-04-17",
-            "duration": 5220,
-            "titles": [
-                "Potje met peetje"
-            ],
-            "activities": [
-                {
-                    "title": "Mario Kart 64",
-                    "duration": 5220
-                }
-            ],
-            "twitchtracker_id": "41795690684",
-            "tags": [
-                "casual",
-                "solo"
-            ],
-            "time_start": "16:07:00",
-            "time_end": "17:35:00"
+          "id": "6046",
+          "type": "stream",
+          "date": "2021-04-17",
+          "youtube_id": "OGk7cPDIBY4",
+          "duration": 5220,
+          "titles": [
+            "Potje met peetje"
+          ],
+          "activities": [
+            {
+              "title": "Mario Kart 64",
+              "duration": 5220
+            }
+          ],
+          "twitchtracker_id": "41795690684",
+          "tags": [
+            "casual",
+            "solo"
+          ],
+          "time_start": "16:07:00",
+          "time_end": "17:35:00"
         },
         {
             "id": "1d1f",
@@ -38765,26 +38726,27 @@
             "time_end": "19:05:00"
         },
         {
-            "id": "d450",
-            "type": "stream",
-            "date": "2021-04-24",
-            "duration": 5280,
-            "titles": [
-                "potje met peetje"
-            ],
-            "activities": [
-                {
-                    "title": "Call Of Duty: Warzone",
-                    "duration": 5280
-                }
-            ],
-            "twitchtracker_id": "41861107724",
-            "tags": [
-                "casual",
-                "solo"
-            ],
-            "time_start": "02:16:00",
-            "time_end": "03:45:00"
+          "id": "d450",
+          "type": "stream",
+          "date": "2021-04-24",
+          "youtube_id": "vJG08JlD4oM",
+          "duration": 5280,
+          "titles": [
+            "potje met peetje"
+          ],
+          "activities": [
+            {
+              "title": "Call Of Duty: Warzone",
+              "duration": 5280
+            }
+          ],
+          "twitchtracker_id": "41861107724",
+          "tags": [
+            "casual",
+            "solo"
+          ],
+          "time_start": "02:16:00",
+          "time_end": "03:45:00"
         },
         {
             "id": "0835",
@@ -38813,31 +38775,31 @@
             "time_end": "22:25:00"
         },
         {
-            "id": "ee55",
-            "type": "stream",
-            "date": "2021-04-27",
-            "youtube_id": "8KFKp2RnEq4",
-            "duration": 10620,
-            "titles": [
-                "potje met peetje"
-            ],
-            "activities": [
-                {
-                    "title": "Special Events",
-                    "duration": 6720
-                },
-                {
-                    "title": "Call of Duty: Warzone",
-                    "duration": 3900
-                }
-            ],
-            "twitchtracker_id": "41890530892",
-            "tags": [
-                "casual",
-                "solo"
-            ],
-            "time_start": "00:07:00",
-            "time_end": "03:05:00"
+          "id": "ee55",
+          "type": "stream",
+          "date": "2021-04-27",
+          "youtube_id": "q_xT_LFD5Y0",
+          "duration": 10620,
+          "titles": [
+            "potje met peetje"
+          ],
+          "activities": [
+            {
+              "title": "Special Events",
+              "duration": 6720
+            },
+            {
+              "title": "Call of Duty: Warzone",
+              "duration": 3900
+            }
+          ],
+          "twitchtracker_id": "41890530892",
+          "tags": [
+            "casual",
+            "solo"
+          ],
+          "time_start": "00:07:00",
+          "time_end": "03:05:00"
         },
         {
             "id": "e22e",
@@ -38863,26 +38825,27 @@
             "collection": 75
         },
         {
-            "id": "68af",
-            "type": "stream",
-            "date": "2021-04-27",
-            "duration": 14040,
-            "titles": [
-                "potje met peetje"
-            ],
-            "activities": [
-                {
-                    "title": "Call of Duty: Warzone",
-                    "duration": 14040
-                }
-            ],
-            "twitchtracker_id": "41899033196",
-            "tags": [
-                "casual",
-                "solo"
-            ],
-            "time_start": "23:00:00",
-            "time_end": "02:55:00"
+          "id": "68af",
+          "type": "stream",
+          "date": "2021-04-27",
+          "youtube_id": "seolTEVl4gY ",
+          "duration": 14040,
+          "titles": [
+            "potje met peetje"
+          ],
+          "activities": [
+            {
+              "title": "Call of Duty: Warzone",
+              "duration": 14040
+            }
+          ],
+          "twitchtracker_id": "41899033196",
+          "tags": [
+            "casual",
+            "solo"
+          ],
+          "time_start": "23:00:00",
+          "time_end": "02:55:00"
         },
         {
             "id": "cb56",
@@ -38908,28 +38871,29 @@
             "time_end": "23:15:00",
             "collection": 75
         },
-        {
+            {
             "id": "5f50",
             "type": "stream",
             "date": "2021-04-29",
+            "youtube_id": "_Z2UB-tMQBM",
             "duration": 7200,
             "titles": [
-                "potje met peetje"
+              "potje met peetje"
             ],
             "activities": [
-                {
-                    "title": "Call of Duty: Warzone",
-                    "duration": 7200
-                }
+              {
+                "title": "Call of Duty: Warzone",
+                "duration": 7200
+              }
             ],
             "twitchtracker_id": "41909407068",
             "tags": [
-                "casual",
-                "solo"
+              "casual",
+              "solo"
             ],
             "time_start": "01:04:00",
             "time_end": "03:05:00"
-        },
+          },
         {
             "id": "947c",
             "type": "stream",
@@ -38977,26 +38941,27 @@
             "time_end": "22:35:00"
         },
         {
-            "id": "313e",
-            "type": "stream",
-            "date": "2021-05-04",
-            "duration": 6900,
-            "titles": [
-                "potje met peetje"
-            ],
-            "activities": [
-                {
-                    "title": "Call of Duty: Warzone",
-                    "duration": 6900
-                }
-            ],
-            "twitchtracker_id": "41961441020",
-            "tags": [
-                "casual",
-                "solo"
-            ],
-            "time_start": "00:59:00",
-            "time_end": "02:55:00"
+          "id": "313e",
+          "type": "stream",
+          "date": "2021-05-04",
+          "youtube_id": "2jwUAjuPVGA",
+          "duration": 6900,
+          "titles": [
+            "potje met peetje"
+          ],
+          "activities": [
+            {
+              "title": "Call of Duty: Warzone",
+              "duration": 6900
+            }
+          ],
+          "twitchtracker_id": "41961441020",
+          "tags": [
+            "casual",
+            "solo"
+          ],
+          "time_start": "00:59:00",
+          "time_end": "02:55:00"
         },
         {
             "id": "d194",
@@ -39070,26 +39035,27 @@
             "time_end": "04:55:00"
         },
         {
-            "id": "7cfc",
-            "type": "stream",
-            "date": "2021-05-08",
-            "duration": 7260,
-            "titles": [
-                "potje met peetje"
-            ],
-            "activities": [
-                {
-                    "title": "Call of Duty: Warzone",
-                    "duration": 7260
-                }
-            ],
-            "twitchtracker_id": "42012004492",
-            "tags": [
-                "casual",
-                "solo"
-            ],
-            "time_start": "22:43:00",
-            "time_end": "00:45:00"
+          "id": "7cfc",
+          "type": "stream",
+          "youtube_id": "lA-geP9zTKY",
+          "date": "2021-05-08",
+          "duration": 7260,
+          "titles": [
+            "potje met peetje"
+          ],
+          "activities": [
+            {
+              "title": "Call of Duty: Warzone",
+              "duration": 7260
+            }
+          ],
+          "twitchtracker_id": "42012004492",
+          "tags": [
+            "casual",
+            "solo"
+          ],
+          "time_start": "22:43:00",
+          "time_end": "00:45:00"
         },
         {
             "id": "28f0",
@@ -39142,26 +39108,27 @@
             "time_end": "23:05:00"
         },
         {
-            "id": "9e8a",
-            "type": "stream",
-            "date": "2021-05-14",
-            "duration": 4860,
-            "titles": [
-                "potje met peetje"
-            ],
-            "activities": [
-                {
-                    "title": "Call of Duty: Warzone",
-                    "duration": 4860
-                }
-            ],
-            "twitchtracker_id": "42066048652",
-            "tags": [
-                "casual",
-                "solo"
-            ],
-            "time_start": "16:53:00",
-            "time_end": "18:15:00"
+          "id": "9e8a",
+          "type": "stream",
+          "youtube_id": "cj13-EGQcD8",
+          "date": "2021-05-14",
+          "duration": 4860,
+          "titles": [
+            "potje met peetje"
+          ],
+          "activities": [
+            {
+              "title": "Call of Duty: Warzone",
+              "duration": 4860
+            }
+          ],
+          "twitchtracker_id": "42066048652",
+          "tags": [
+            "casual",
+            "solo"
+          ],
+          "time_start": "16:53:00",
+          "time_end": "18:15:00"
         },
         {
             "id": "3b23",
@@ -39237,26 +39204,27 @@
             "time_end": "22:15:00"
         },
         {
-            "id": "b6c8",
-            "type": "stream",
-            "date": "2021-05-20",
-            "duration": 3300,
-            "titles": [
-                "potje met peetje"
-            ],
-            "activities": [
-                {
-                    "title": "Call of Duty: Warzone",
-                    "duration": 3300
-                }
-            ],
-            "twitchtracker_id": "42118689788",
-            "tags": [
-                "casual",
-                "solo"
-            ],
-            "time_start": "02:09:00",
-            "time_end": "03:05:00"
+          "id": "b6c8",
+          "type": "stream",
+          "date": "2021-05-20",
+          "youtube_id": "ebUYDnYgMak",
+          "duration": 3300,
+          "titles": [
+            "potje met peetje"
+          ],
+          "activities": [
+            {
+              "title": "Call of Duty: Warzone",
+              "duration": 3300
+            }
+          ],
+          "twitchtracker_id": "42118689788",
+          "tags": [
+            "casual",
+            "solo"
+          ],
+          "time_start": "02:09:00",
+          "time_end": "03:05:00"
         },
         {
             "id": "989a",
@@ -40246,26 +40214,27 @@
             "time_end": "23:35:00"
         },
         {
-            "id": "9c40",
-            "type": "stream",
-            "date": "2021-08-11",
-            "duration": 9360,
-            "titles": [
-                "potje met peetje"
-            ],
-            "activities": [
-                {
-                    "title": "Fall Guys",
-                    "duration": 9360
-                }
-            ],
-            "twitchtracker_id": "42912238636",
-            "tags": [
-                "main",
-                "solo"
-            ],
-            "time_start": "00:08:00",
-            "time_end": "02:45:00"
+          "id": "9c40",
+          "type": "stream",
+          "date": "2021-08-11",
+          "youtube_id": "P1pg_S92WOU",
+          "duration": 9360,
+          "titles": [
+            "potje met peetje"
+          ],
+          "activities": [
+            {
+              "title": "Fall Guys",
+              "duration": 9360
+            }
+          ],
+          "twitchtracker_id": "42912238636",
+          "tags": [
+            "main",
+            "solo"
+          ],
+          "time_start": "00:08:00",
+          "time_end": "02:45:00"
         },
         {
             "id": "6c52",
@@ -40965,25 +40934,26 @@
             "time_end": "17:25:00"
         },
         {
-            "id": "6d96",
-            "type": "stream",
-            "date": "2021-09-20",
-            "duration": 5280,
-            "titles": [
-                "codje met peetje"
-            ],
-            "activities": [
-                {
-                    "title": "Call of Duty: Vanguard",
-                    "duration": 5280
-                }
-            ],
-            "twitchtracker_id": "43311249404",
-            "tags": [
-                "main"
-            ],
-            "time_start": "02:16:00",
-            "time_end": "03:45:00"
+          "id": "6d96",
+          "type": "stream",
+          "date": "2021-09-20",
+          "youtube_id": "FrxOrLrk0ng",
+          "duration": 5280,
+          "titles": [
+            "codje met peetje"
+          ],
+          "activities": [
+            {
+              "title": "Call of Duty: Vanguard",
+              "duration": 5280
+            }
+          ],
+          "twitchtracker_id": "43311249404",
+          "tags": [
+            "main"
+          ],
+          "time_start": "02:16:00",
+          "time_end": "03:45:00"
         },
         {
             "id": "dd39",
@@ -44633,25 +44603,26 @@
             "time_end": "22:05:00"
         },
         {
-            "id": "119a",
-            "type": "stream",
-            "date": "2022-08-15",
-            "duration": 5220,
-            "titles": [
-                "s tier piet"
-            ],
-            "activities": [
-                {
-                    "title": "Super Mario Maker 2",
-                    "duration": 5220
-                }
-            ],
-            "twitchtracker_id": "39724534904",
-            "tags": [
-                "main"
-            ],
-            "time_start": "01:37:00",
-            "time_end": "03:05:00"
+          "id": "119a",
+          "type": "stream",
+          "youtube_id": "lgcy0jOXo4E",
+          "date": "2022-08-15",
+          "duration": 5220,
+          "titles": [
+            "s tier piet"
+          ],
+          "activities": [
+            {
+              "title": "Super Mario Maker 2",
+              "duration": 5220
+            }
+          ],
+          "twitchtracker_id": "39724534904",
+          "tags": [
+            "main"
+          ],
+          "time_start": "01:37:00",
+          "time_end": "03:05:00"
         },
         {
             "id": "0ed9",
@@ -48834,25 +48805,26 @@
             "free": true
         },
         {
-            "id": "a9fb",
-            "type": "stream",
-            "date": "2023-09-19",
-            "duration": 4980,
-            "titles": [
-                "TIMON IS BACK IN TOWN"
-            ],
-            "activities": [
-                {
-                    "title": "Special Events",
-                    "duration": 4980
-                }
-            ],
-            "twitchtracker_id": "41129065240",
-            "tags": [
-                "casual"
-            ],
-            "time_start": "16:21:00",
-            "time_end": "17:45:00"
+          "id": "a9fb",
+          "type": "stream",
+          "date": "2023-09-19",
+          "youtube_id": "mWviW20l4JA",
+          "duration": 4980,
+          "titles": [
+            "TIMON IS BACK IN TOWN"
+          ],
+          "activities": [
+            {
+              "title": "Special Events",
+              "duration": 4980
+            }
+          ],
+          "twitchtracker_id": "41129065240",
+          "tags": [
+            "casual"
+          ],
+          "time_start": "16:21:00",
+          "time_end": "17:45:00"
         },
         {
             "id": "2065",
