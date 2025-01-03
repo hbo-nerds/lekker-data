@@ -18,7 +18,11 @@ Dit zijn de velden die je in de objecten van `content` vindt:
 * `"type": string` - Het type van de content. Dit kan zijn: `"video"`, `"stream"`, `"podcast"`
 * `"date": string` - De datum dat de content is geupload of gestreamd. In het formaat `YYYY-MM-DD`
 * `"duration": integer` - De lengte van de content duurt in seconden.
-* `"youtube_id": string?` - De ID van de YouTube video. Dit is de ID die je in de URL van de video vindt. Bijvoorbeeld: `"dQw4w9WgXcQ"`
+* `"youtube_id": string?` *Deprecated! Gebruik `platforms`.* De ID van de YouTube video. Dit is de ID die je in de URL van de video vindt. Bijvoorbeeld: `"dQw4w9WgXcQ"`
+ * `"platforms": { "twitch"|"youtube" }: object` - Object met informatie over de videos.
+ *   - `id`: string - De ID van de video op het platform.
+ *   - `duration` (optioneel):  - De duur van de video indien deze korter duurt dan de stream of originele video.
+* `"platforms": object[]?` **Deprecated!** - De ID van de YouTube video. Dit is de ID die je in de URL van de video vindt. Bijvoorbeeld: `"dQw4w9WgXcQ"`
 * `"description": string?` - De beschrijving van de content.
 * `"collection": integer[]?` - De ID van de collection waar de content bij hoort.
 
@@ -46,7 +50,7 @@ Voor de objecten waarbij `type == "stream"`:
 * `title_custom: string?` - Een zelfbedachte titel voor als de stream geen goede titels heeft die de stream omschrijft.
 * `"activities": string[]` - Een lijst van alle activiteiten die zijn gedaan tijdens deze stream. Bijvoorbeeld: `["Drawing from Memory"]`
 * `"twitchtracker_id": string?` - De ID van de stream op TwitchTracker. Niet beschikbaar voor streams voor 21 november 2016.
-* `"twitch_id": string?` - De ID van de stream op Twitch.
+* `"twitch_id": string?` *Deprecated! Gebruik `platforms`.* - De ID van de stream op Twitch.
 * `"extra_urls: object[]?` - Een lijst van extra URLs die bij de stream horen. Bijvoorbeeld: `[{ "title": "Deel 2", url: "https://www.twitch.tv/videos/123456789"]`
 * `"tags": string[]?` - De tags die bij de stream horen. Bijvoorbeeld: `["tekenen", "peter vs timon"]`
 * `"time_start": string?` - De tijd dat de stream begon. In het formaat `HH:MM`.
