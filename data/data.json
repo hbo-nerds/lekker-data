@@ -40931,34 +40931,34 @@
             "activity": "Wii Sports Resort"
         },
         {
-            "id": "296b",
-            "type": "stream",
-            "date": "2020-03-15",
-            "youtube_id": "LDZCwlcoqrI",
-            "duration": 1200,
-            "titles": [
-                "potje met peetje"
-            ],
-            "activities": [
-                {
-                    "title": "Games + Demos",
-                    "duration": 1200
-                }
-            ],
-            "twitchtracker_id": "844065745",
-            "tags": [
-                "casual",
-                "solo"
-            ],
-            "time_start": "00:14:00",
-            "time_end": "00:35:00"
+          "id": "296b",
+          "type": "stream",
+          "date": "2020-03-15",
+          "youtube_id": "LDZCwlcoqrI",
+          "duration": 15300,
+          "titles": [
+            "potje met peetje"
+          ],
+          "activities": [
+            {
+              "title": "Call of Duty: Warzone ",
+              "duration": 1200
+            }
+          ],
+          "twitchtracker_id": "844065745",
+          "tags": [
+            "casual",
+            "solo"
+          ],
+          "time_start": "00:14:00",
+          "time_end": "00:35:00"
         },
         {
             "id": "3e8c",
             "type": "stream",
             "date": "2020-03-15",
             "youtube_id": "k_wbFr1zQ_k",
-            "duration": 15300,
+            "duration": 6000,
             "titles": [
                 "potje met peetje"
             ],
@@ -44432,7 +44432,7 @@
             "type": "stream",
             "youtube_id": "_INMj4bWhGg",
             "date": "2020-10-29",
-            "duration": 1260,
+            "duration": 3600,
             "titles": [
                 "this is a test"
             ],
@@ -46783,27 +46783,27 @@
             "time_end": "19:05:00"
         },
         {
-            "id": "d450",
-            "type": "stream",
-            "date": "2021-04-24",
-            "youtube_id": "vJG08JlD4oM",
-            "duration": 5280,
-            "titles": [
-                "potje met peetje"
-            ],
-            "activities": [
-                {
-                    "title": "Call Of Duty: Warzone",
-                    "duration": 5280
-                }
-            ],
-            "twitchtracker_id": "41861107724",
-            "tags": [
-                "casual",
-                "solo"
-            ],
-            "time_start": "02:16:00",
-            "time_end": "03:45:00"
+          "id": "d450",
+          "type": "stream",
+          "date": "2021-04-24",
+          "youtube_id": "YwC-KMVjn_o",
+          "duration": 5280,
+          "titles": [
+            "potje met peetje"
+          ],
+          "activities": [
+            {
+              "title": "Call Of Duty: Warzone",
+              "duration": 5280
+            }
+          ],
+          "twitchtracker_id": "41861107724",
+          "tags": [
+            "casual",
+            "solo"
+          ],
+          "time_start": "02:16:00",
+          "time_end": "03:45:00"
         },
         {
             "id": "0835",
