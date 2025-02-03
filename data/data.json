@@ -21946,6 +21946,7 @@
       "duration": 3360,
       "youtube_id": "evO7tUYWTx0",
       "titles": [
+        "dream team",
         "top 1"
       ],
       "activities": [
@@ -26969,6 +26970,7 @@
       "id": "67f7",
       "type": "stream",
       "date": "2018-01-16",
+      "description": "De jongens brabbelen over wat zij de beste en slechtste animatronics uit films vinden.",
       "duration": 5220,
       "titles": [
         "Timons stream (met peter)"
@@ -34815,6 +34817,7 @@
       "id": "c97b",
       "type": "stream",
       "date": "2019-02-25",
+      "description": "Peter 'tekent alles', maar tekent eigenlijk alleen Goomba's met menselijke voetjes en begint langzaamaan een erg emotioneel verhaal ermee te ontwikkelen. Vervolgens speelt 'ie wat Tetris.",
       "youtube_id": "bbSUsOE7GtY",
       "duration": 19800,
       "titles": [
@@ -34828,15 +34831,12 @@
         {
           "title": "Tetris",
           "duration": 4200
-        },
-        {
-          "title": "Marvel's Spider-Man",
-          "duration": 7500
         }
       ],
       "twitchtracker_id": "32922469024",
       "tags": [
-        "main"
+        "main",
+        "tekenen"
       ],
       "time_start": "20:34:00",
       "time_end": "02:05:00"
@@ -48109,6 +48109,7 @@
       "id": "6f64",
       "type": "stream",
       "date": "2021-07-26",
+      "description": "De mannen zijn, zelfs voor hun doen, buitengewoon vervelend tegen elkaar terwijl ze Wii Sports proberen te spelen met constante pauzes, chillquits en snotrochels.",
       "duration": 5760,
       "youtube_id": "J_J6XH1RXGU",
       "titles": [
@@ -51028,7 +51029,7 @@
       ],
       "activities": [
         {
-          "title": "Hunter Girls",
+          "title": "theHunter Call of the Wild",
           "duration": 5640
         }
       ],
@@ -59383,6 +59384,11 @@
         }
       ],
       "duration": 10800,
+      "tags": [
+        {
+          "title": "outro"
+        }
+      ],
       "twitch_id": "2206408041",
       "youtube_id": "plgXr8v5OMM",
       "id": "f39d",
