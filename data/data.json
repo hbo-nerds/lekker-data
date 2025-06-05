@@ -60785,5 +60785,62 @@
             "id": "8ee3",
             "type": "stream"
         }
+        {
+            "date": "2025-04-15",
+            "time_start": "16:48:56",
+            "time_end": "18:16:21",
+            "titles": [
+               
+                "CROC - live om half 5"
+            ],
+            "activities": [
+                {
+                    "title": "Croc: Legend of the Gobbos",
+                    "duration": 1
+                }
+            ],
+            "duration": 5245,
+            "youtube_id": "i_4grm8ejFM",
+            "id": "8ee4",
+            "type": "stream"
+        }
+        {
+            "date": "2025-05-05",
+            "time_start": "16:48:56",
+            "time_end": "18:16:21",
+            "titles": [
+               
+                "Playstation: State of Play (live reacties)"
+            ],
+            "activities": [
+                {
+                    "title": "Speciale Evenementen",
+                    "duration": 1
+                }
+            ],
+            "duration": 5245,
+            "youtube_id": "5kB57GrrFWM",
+            "id": "8ee5",
+            "type": "stream"
+        }
+{
+            "date": "2025-05-05",
+            "time_start": "16:48:56",
+            "time_end": "18:16:21",
+            "titles": [
+               
+                "We hebben die SWITCH 2 te pakken"
+            ],
+            "activities": [
+                {
+                    "title": "Mario Kart World",
+                    "duration": 1
+                }
+            ],
+            "duration": 5245,
+            "youtube_id": "mCn_Tm7dDRo",
+            "id": "8ee6",
+            "type": "stream"
+        }
     ]
 }
