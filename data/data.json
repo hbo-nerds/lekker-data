@@ -61094,8 +61094,6 @@
             "type": "video",
             "date": "2025-09-04",
             "title": "zijn deze spellen het waard?",
-            "duration": 1800,
-            "youtube_id": "PB5CYRNNIlw",
             "activities": [
                 {
                     "title": "LEGO voyagers",
@@ -61109,7 +61107,9 @@
                     "title": "Unknown Tapes",
                     "duration": 1
                 }
-            ]
-        },
+            ],
+            "duration": 1800,
+            "youtube_id": "H9IU0MGIhv4",            
+        }
     ]
 }
