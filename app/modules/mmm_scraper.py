@@ -101,6 +101,7 @@ def _build_stream_item(video):
         "time_start": time_start.strftime("%H:%M:%S"),
         "time_end": time_end.strftime("%H:%M:%S"),
         "titles": titles,
+        "twitch_id": str(twitch_id),
         "activities": activities,
         "duration": total_seconds,
     }
